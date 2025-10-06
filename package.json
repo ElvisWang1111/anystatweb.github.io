@@ -21,5 +21,8 @@
   "homepage": "https://github.com/Anthony-Li-Anran/Anystat_doc_web.github.io#readme",
   "devDependencies": {
     "vitepress": "^1.6.4"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
