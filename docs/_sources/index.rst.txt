@@ -1,4 +1,4 @@
-Anystat 文档
+Welcome to Anystat's documentation!
 ============
 
 .. epigraph::
@@ -46,13 +46,18 @@ Anystat简介
    Installation Guide <installation>
       
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: tutorial
-   
-   Tutorial <tutorial>
+
+    首次启动与 API 配置 <tutorial_startup>
+    数据导入模块 <tutorial_loading>
+    数据预处理模块 <tutorial_preprocessing>
+    数据可视化模块 <tutorial_visualization>
+    数据建模模块 <tutorial_modeling>
+    报告生成模块 <tutorial_report>
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Extending
     
     Examples <examples>
