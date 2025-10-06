@@ -40,4 +40,4 @@
 .. image:: images/数据可视化-可视化结果.png
    :alt: 数据可视化-可视化结果
 
-完成数据可视化后，您可以继续进行 `数据建模 <data-modeling.md>`_。  
+完成数据可视化后，您可以继续进行 `数据建模 <tutorial_modeling.rst>`_。  
