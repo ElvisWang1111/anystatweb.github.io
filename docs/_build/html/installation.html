@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安装部署 &mdash; Anystat 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="教程与展示" href="tutorial.html" />
+    <link rel="prev" title="Anystat 文档" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">环境准备</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">安装步骤</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">安装常见问题及解决方案</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extending</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">安装部署</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>安装部署<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>环境准备<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>操作系统</strong>：Windows/Linux/MacOS</p></li>
+<li><p><strong>Python版本</strong>：Python 3.9+（<strong>必须安装，推荐安装 Python 3.11+</strong>）</p></li>
+<li><p><strong>Anaconda**（**必须安装</strong>）</p></li>
+<li><p><strong>Github Desktop**（**非必须，但推荐安装</strong>）</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>安装步骤<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>以下安装步骤均在终端中进行。若未下载 Github Desktop，则不使用第一步，把从 GitHub 上下载的 <cite>.zip</cite> 文件在本地文件夹解压缩。</p>
+<ol class="arabic">
+<li><p>克隆项目到本地:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 如果使用 Github Desktop，在终端中执行以下命令</span>
+<span class="c1"># 否则，直接从 GitHub 下载 ZIP 文件并解压</span>
+</pre></div>
+</div>
+<p>gh repo clone ElvisWang1111/AAAAAnystat</p>
+</li>
+<li><p>将工作目录转到 Anystat 本体文件所在文件夹:</p>
+<p>cd (your working directory)</p>
+<p>其中将括号内的内容替换为 Anystat 的文件夹地址即可。</p>
+</li>
+<li><p>创建虚拟环境:</p>
+<p>conda create –name Anystat
+conda activate Anystat</p>
+</li>
+<li><p>安装依赖项:</p>
+<p>pip install -r requirements.txt
+pip install playwright
+playwright install</p>
+</li>
+</ol>
+</section>
+<section id="id4">
+<h2>安装常见问题及解决方案<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>### Q: 如何准备 Python 环境？</p>
+<p>#### Windows 端</p>
+<p>从 Python 的 <a class="reference external" href="https://www.python.org/">官方站点</a> 下载 Python 3.9 及以上的安装包，安装时务必勾选 <strong>Add Python 3.x to PATH</strong>。安装后打开终端输入:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>只要输出:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="p">(</span><span class="o">*</span><span class="n">version</span><span class="o">*</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>其中 <cite>(*version*)</cite> 是实际输出的版本，应不低于 3.9，则说明安装成功。</p>
+<p>安装 Anaconda 请在 <a class="reference external" href="https://www.anaconda.com/download">官方站点</a> 下载并安装。</p>
+<p>#### Mac 端</p>
+<p>macOS 通常预装较低版本的 Python，安装方法与 Windows 类似，详情请参见 <a class="reference external" href="https://www.python.org/downloads/macos/">官方站点</a>，下载 <cite>.pkg</cite> 文件并安装对应版本。</p>
+<p>#### Linux 端</p>
+<p>Linux/Ubuntu 通常已内置 Python，只需升级或检查版本即可。若要更新 Python，请在终端中输入:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+</pre></div>
+</div>
+<p>如果想要安装指定版本，则输入:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">.</span><span class="n">x</span>
+</pre></div>
+</div>
+<p>将 <cite>3.x</cite> 替换为所需版本即可。安装后可验证版本，以 Python 3.12.7 为例，输入:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span><span class="mf">.12</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>即可获得版本号。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Anystat 文档" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="教程与展示" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
