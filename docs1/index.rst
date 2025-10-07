@@ -1,4 +1,4 @@
-Welcome to Anystat's documentation 🎉 !
+Welcome to Anystat's documentation!
 ============
 
 Anystat 简介

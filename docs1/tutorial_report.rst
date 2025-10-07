@@ -51,4 +51,4 @@
    :alt: 报告生成-报告大纲
 
 
-完成报告生成后，恭喜您完成数据分析全流程🎉！如有其他需求，可参考 `使用示例 </anystatweb.github.io/examples.html>`_ 和 `相关资源 </anystatweb.github.io/resources.html>`_ 章节。  
+完成报告生成后，恭喜您完成数据分析全流程！如有其他需求，可参考 `使用示例 </anystatweb.github.io/examples.html>`_ 和 `相关资源 </anystatweb.github.io/resources.html>`_ 章节。  
