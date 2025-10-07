@@ -43,7 +43,7 @@ Anystat 提供了两种数据上传方式：
 .. image:: images/数据导入-数据展示-数据预览.png
    :alt: 数据预览
 
-.. note::
+.. admonition:: 提示
    建议上传的数据列数少一些，不超过 15 列，否则会大大延长分析的时间。
 
 完成数据导入后，您可以继续进行 `数据预处理 <data-preprocessing.md>`_。  
