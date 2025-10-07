@@ -60,6 +60,9 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'includehidden': False,
     'logo_only': True,
+    'body_max_width': '100%',
+    'style_external_links': True,
+    'style_nav_header_background': '#2980B9'
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

@@ -28,7 +28,7 @@ API 配置
 目前支持的平台：ChatGPT、Deepseek、通义千问和智谱AI。  
 在使用前，请在左侧边栏选择相应的大模型，填入 API key 并保存。
 
-API 获取方法详见 `API key 获取途径 </anystat.github.io/resources.md#api-key>`_。
+API 获取方法详见 `API key 获取途径 </anystat.github.io/resources.html#api-key>`_。
 
 结束运行
 --------
