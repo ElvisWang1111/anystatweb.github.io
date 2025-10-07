@@ -10,7 +10,7 @@
 
       conda activate Anystat
 
-   其中 `Anystat` 为在 [安装部署](../installation.md) 章节创建的虚拟环境名称。
+   其中 ``Anystat`` 为在 `安装部署 </anystat.github.io/installation.html>`_ 章节创建的虚拟环境名称。
 
 2. 启动应用：
 
@@ -28,7 +28,7 @@ API 配置
 目前支持的平台：ChatGPT、Deepseek、通义千问和智谱AI。  
 在使用前，请在左侧边栏选择相应的大模型，填入 API key 并保存。
 
-API 获取方法详见 [API key 获取途径](../resources.md#api-key获取途径)。
+API 获取方法详见 `API key 获取途径 </anystat.github.io/resources.md#api-key>`。
 
 结束运行
 --------

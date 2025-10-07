@@ -22,13 +22,13 @@ Anystat简介
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
+   :caption: 环境配置
 
-   Installation Guide <installation>
+   安装部署 <installation>
       
 .. toctree::
    :maxdepth: 1
-   :caption: tutorial
+   :caption: 使用教程
 
     首次启动与 API 配置 <tutorial_startup>
     数据导入模块 <tutorial_loading>
@@ -39,13 +39,13 @@ Anystat简介
 
 .. toctree::
     :maxdepth: 1
-    :caption: Extending
+    :caption: 扩展资源
     
-    Examples <examples>
-    Resources <resources>
+    使用示例 <examples>
+    相关资源 <resources>
  
 
 贡献与支持
 -----------
 
-欢迎为项目提供反馈和贡献。如有问题或建议，请通过 `相关资源 <resources.md>`_ 中提供的途径与我们联系。  
+欢迎为项目提供反馈和贡献。如有问题或建议，请通过 `相关资源 </anystat.github.io/resources.html>`_ 中提供的途径与我们联系。  
