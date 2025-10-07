@@ -48,4 +48,4 @@ Anystat简介
 贡献与支持
 -----------
 
-欢迎为项目提供反馈和贡献。如有问题或建议，请通过 `相关资源 </anystat.github.io/resources.html>`_ 中提供的途径与我们联系。  
+欢迎为项目提供反馈和贡献。如有问题或建议，请通过 `相关资源 </anystatweb.github.io/resources.html>`_ 中提供的途径与我们联系。  
