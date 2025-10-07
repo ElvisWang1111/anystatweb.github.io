@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>安装部署 &mdash; Anystat 1.0 documentation</title>
@@ -14,7 +14,7 @@
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -105,27 +105,24 @@
 <h2>安装步骤<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>以下安装步骤均在终端中进行。若未下载 Github Desktop，则不使用第一步，把从 GitHub 上下载的 <code class="docutils literal notranslate"><span class="pre">.zip</span></code> 文件在本地文件夹解压缩。</p>
 <ol class="arabic">
-<li><p>克隆项目到本地</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<li><p>克隆项目到本地
+如果使用 Github Desktop，在终端中执行以下命令：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gh<span class="w"> </span>repo<span class="w"> </span>clone<span class="w"> </span>ElvisWang1111/AAAAAnystat
 </pre></div>
 </div>
-<p># 如果使用 Github Desktop，在终端中执行以下命令：
-gh repo clone ElvisWang1111/AAAAAnystat
-# 否则，直接从 GitHub 下载 ZIP 文件并解压</p>
+<p>否则，直接从 GitHub 下载 ZIP 文件并解压。</p>
 </li>
 <li><p>将工作目录转到 Anystat 本体文件所在文件夹</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="o">(</span>your<span class="w"> </span>working<span class="w"> </span>directory<span class="o">)</span>
 </pre></div>
 </div>
-<p>cd (your working directory)</p>
 <p>其中将括号内的内容替换为 Anystat 的文件夹地址即可。</p>
 </li>
 <li><p>创建虚拟环境</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>Anystat
+conda<span class="w"> </span>activate<span class="w"> </span>Anystat
 </pre></div>
 </div>
-<p>conda create –name Anystat
-conda activate Anystat</p>
 </li>
 <li><p>安装依赖项</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
@@ -143,17 +140,15 @@ playwright<span class="w"> </span>install
 <p><strong>Windows 端</strong></p>
 <p>从 Python 的 <a class="reference external" href="https://www.python.org/">官方站点</a> 下载 Python 3.9 及以上的安装包，安装时务必勾选 <strong>Add Python 3.x to PATH</strong>。安装后打开终端输入</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
 </pre></div>
 </div>
-<p>python –version</p>
 </div></blockquote>
 <p>只要输出</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Python<span class="w"> </span><span class="o">(</span>*version*<span class="o">)</span>
 </pre></div>
 </div>
-<p>Python (<em>version</em>)</p>
 </div></blockquote>
 <p>其中 <code class="docutils literal notranslate"><span class="pre">(*version*)</span></code> 是实际输出的版本，应不低于 3.9，则说明安装成功。</p>
 <p>安装 Anaconda 请在 <a class="reference external" href="https://www.anaconda.com/download">官方站点</a> 下载并安装。</p>
@@ -162,24 +157,21 @@ playwright<span class="w"> </span>install
 <p><strong>Linux 端</strong></p>
 <p>Linux/Ubuntu 通常已内置 Python，只需升级或检查版本即可。若要更新 Python，请在终端中输入</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </pre></div>
 </div>
-<p>sudo apt update</p>
 </div></blockquote>
 <p>如果想要安装指定版本，则输入</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3.x
 </pre></div>
 </div>
-<p>sudo apt install python3.x</p>
 </div></blockquote>
 <p>将 <code class="docutils literal notranslate"><span class="pre">3.x</span></code> 替换为所需版本即可。安装后可验证版本，以 Python 3.12.7 为例，输入</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3.12<span class="w"> </span>--version
 </pre></div>
 </div>
-<p>python3.12 –version</p>
 </div></blockquote>
 <p>即可获得版本号。</p>
 </section>
