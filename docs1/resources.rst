@@ -52,8 +52,8 @@ API key 获取途径
 Anystat 支持多种大模型 API，您可以通过以下途径获取相应的 API key：
 
 - `Deepseek API key <https://platform.deepseek.com/usage>`_
-- `ChatGPT API key <https://platform.openai.com/docs/overview>`_ （**需要信用卡支付**）  
-- `通义千问 API key <https://bailian.console.aliyun.com/?spm=5176.29597918.J_SEsSjsNv72yRuRFS2VknO.2.54d87b08CphuY5&tab=model#/efm/model_experience_center/text>`_ （**提供一定量免费额度**）  
+- `ChatGPT API key <https://platform.openai.com/docs/overview>`_ 
+- `通义千问 API key <https://bailian.console.aliyun.com/?spm=5176.29597918.J_SEsSjsNv72yRuRFS2VknO.2.54d87b08CphuY5&tab=model#/efm/model_experience_center/text>`_ 
 - `智谱AI <https://docs.bigmodel.cn/cn/guide/develop/http/introduction>`_
 
 反馈途径

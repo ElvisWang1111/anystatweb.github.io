@@ -20,8 +20,8 @@
    
       git clone https://github.com/ElvisWang1111/AAAAAnystat.git
 
-   克隆完成后，会在当前目录下生成一个 AAAAAnystat 文件夹，包含项目所有源代码。
-   若未下载 Git，则不使用第一步，直接从 GitHub 下载 ZIP 文件并解压。
+   克隆完成后，当前目录下将生成一个名为 ``AAAAAnystat`` 的文件夹，其中包含项目的全部源代码。
+   若未安装 Git，可跳过此步骤，直接从 GitHub 下载 ZIP 压缩包并进行解压。
 
 
 2. 将工作目录转到 Anystat 本体文件所在文件夹
@@ -30,7 +30,6 @@
    
       cd AAAAAnystat
 
-   其中将括号内的内容替换为 Anystat 的文件夹地址即可。
 
 3. 创建虚拟环境
 
@@ -47,6 +46,7 @@
       pip install playwright
       playwright install
 
+
 安装常见问题及解决方案
 --------------------
 
@@ -57,4 +57,4 @@
 
 **Q**: 必须配置环境吗？
 
-**A**: 我们在下一章提供打包好的 app 下载链接，提供无需代码的安装实现。
+**A**: 在下一章节中，将提供打包完成的应用程序下载链接，用户可直接进行安装，无需编写任何代码。
