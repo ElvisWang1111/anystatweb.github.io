@@ -30,6 +30,13 @@ API 相关问题
 
   **A**：Anystat 助手会尝试自动修复 bug，请耐心等待。如果多次尝试后仍失败，可能需要手动调整代码或简化任务需求。
 
+Streamlit相关问题
+~~~~~~~~~~~~~~
+
+- **Q**： KeyError: 'workflow'
+
+  **A**： Streamlit 在长时间未操作后，可能会出现 KeyError: 'workflow'、 KeyError: 'workflowworkflow\visualization' 等异常。可通过刷新浏览器页面，或使用 ``ctrl+c`` 停止运行后重新启动 Anystat 以解决此问题。
+
 部分教程示例
 ------------
 

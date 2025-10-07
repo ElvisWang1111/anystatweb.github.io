@@ -1,30 +1,52 @@
-Welcome to Anystat's documentation!
+Welcome to Anystat's documentation 🎉 !
 ============
 
-.. epigraph::
-   零基础入门指南：Anystat 可视化数据分析 Agent 使用手册
+Anystat 简介
+---------
 
-Anystat简介
------------
+Anystat，致力于成为用户数据分析的 copilot 。
 
-“Anystat” 是一个基于 Streamlit 的可视化数据分析 agent，无需编程基础即可轻松完成数据导入、预处理、分析与报告生成全流程，大幅简化与大语言模型的交互流程。  
-无论你是数据分析的小白还是能玩转数据的大师，Anystat 都可以帮助你快速完成数据分析并生成报告。
+我们正在寻求一个入门友好、覆盖数据分析端到端流程、可通过与用户多轮交互持续优化效果，并具备承载未来五年 LLM 技术迭代能力的数据分析 Agent 框架，助你高效推进每一步分析任务。
+
 
 功能特点
 ---------
 
-- 支持数据文件拖拽上传  
-- 自动数据概览和可视化  
-- 智能数据预处理  
-- 交互式统计分析  
-- 一键生成分析报告  
+.. raw:: html
+
+   <h3><span class="highlight-text">全流程覆盖，模块化重构数据分析</span></h3>
+
+- Anystat 覆盖导入、预处理、可视化、建模与报告生成五个流程。针对每一流程内任务的采用模块化设计，专职 Agent 负责，将 Agent 的能力无缝融入数据分析。
+
+
+.. raw:: html
+
+   <h3><span class="highlight-text">编写代码，释放数据分析潜能</span></h3>
+
+- Coding 兼容工具调用与自主开发。 Agent 不仅能精准理解用户需求，灵活调用现有工具，还可根据需求自主编写新工具，真正实现用户意图，兼顾稳定性与灵活性。
+
+
+.. raw:: html
+
+   <h3><span class="highlight-text">自动模式，让AI主导数据分析</span></h3>
+
+- 面向小白用户，简单上手操作。只需上传数据，剩下交给 Agent 负责。内置 Planning Agent 自动分解任务、智能分工。一键实现高质量数据分析报告。
+
+
+.. raw:: html
+
+   <h3><span class="highlight-text">专业报告，一键生成完整分析</span></h3>
+
+- 多智能体协作自动生成初步目录，用户可灵活调整。 Report Agent 基于最终目录，从概要到细节一键输出图文并茂的专业级数据分析报告。  
+
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: 环境配置
+   :maxdepth: 1
+   :caption: 安装部署
 
-   安装部署 <installation>
+   通过源码安装 <installation>
+   通过发行包安装 <installation_setup>
       
 .. toctree::
    :maxdepth: 1

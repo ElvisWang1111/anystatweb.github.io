@@ -7,7 +7,7 @@
   <title>数据可视化模块 &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=82c2d9c0" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
 
   
     <link rel="shortcut icon" href="_static/icon.png"/>
@@ -47,9 +47,10 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_setup.html">通过发行包安装</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul class="current">
@@ -57,10 +58,14 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorial_loading.html"> 数据导入模块</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_preprocessing.html"> 数据预处理模块</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"> 数据可视化模块</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">配色选择</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">可视化建议</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">可视化执行</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">可视化结果</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">功能特点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">操作教程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">配色选择</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">可视化建议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">可视化执行</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">可视化结果</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_modeling.html"> 数据建模模块</a></li>
@@ -100,30 +105,49 @@
 <h1>数据可视化模块<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>数据可视化是数据分析的重要组成部分。Anystat 提供了丰富的数据可视化功能，帮助您直观地理解数据特征和关系。</p>
 <section id="id2">
-<h2>配色选择<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>在配色选择模块下选择您喜欢的配色方案：</p>
-<img alt="数据可视化-配色选择" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E9%85%8D%E8%89%B2%E9%80%89%E6%8B%A9.png" />
+<h2>功能特点<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h3><span class="highlight-text">绘图配色调整</span></h3><ul class="simple">
+<li><p>系统预设九套精心设计的配色方案，用户可根据个人偏好选择适合的绘图配色，以提升可视化效果。</p></li>
+</ul>
+<h3><span class="highlight-text">可视化操作建议</span></h3><ul class="simple">
+<li><p>Visualization Agent 基于对数据含义与类型的理解，自动选择并生成适合的单变量与多变量可视化方案。</p></li>
+</ul>
+<h3><span class="highlight-text">代码执行可视化</span></h3><ul class="simple">
+<li><p>Visualization Agent 基于系统建议与用户需求，自动生成代码以灵活实现可视化展示，用户可在结果界面中下载相应的可视化图像。</p></li>
+</ul>
 </section>
 <section id="id3">
-<h2>可视化建议<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p>与 agent 进行交互获取可视化建议，建议生成后，在对话栏下方会弹出 “根据 LLM 意见生成代码” 按钮，点击即可生成可执行的 Python 脚本代码。</p>
+<h2>操作教程<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>配色选择<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>在配色选择模块中，选择您偏好的配色方案用于可视化展示。</p>
+<img alt="数据可视化-配色选择" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E9%85%8D%E8%89%B2%E9%80%89%E6%8B%A9.png" />
+</section>
+<section id="id5">
+<h3>可视化建议<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>通过与 Visualization Agent 交互，用户可获取可视化方案建议。建议生成后，系统将在对话栏下方显示“🔧 生成可视化代码”按钮，点击后即可生成可执行的 Python 可视化脚本。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>运行过程中可能会多次报错，但 Anystat 助手会帮您修复 bug，无需人工检查。</p>
+<p>大模型生成的代码可能存在错误，运行过程中如发生异常，Visualization Agent 将自动分析并尝试修复。</p>
 </div>
 <img alt="数据可视化-可视化建议" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BB%BA%E8%AE%AE.png" />
 <img alt="代码生成" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90.png" />
 </section>
-<section id="id4">
-<h2>可视化执行<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<p>在可视化执行模块下可对代码进行修改和执行以及选择是否附加分析：</p>
+<section id="id6">
+<h3>可视化执行<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>在可视化执行模块中，用户可对生成的代码进行编辑与执行。系统同时提供附加分析开关，支持用户根据需求灵活启用或关闭该功能。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>在当前版本中，启用附加分析后，Visualization Agent 将以串行方式依次分析可视化图表。当图表数量较多时，分析过程可能耗时较长。</p>
+</div>
 <img alt="数据可视化-可视化执行" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E6%89%A7%E8%A1%8C.png" />
 </section>
-<section id="id5">
-<h2>可视化结果<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
-<p>在可视化执行模块点击 “执行脚本” 并在可视化结果模块下查看相应结果。生成的图像可以翻页查看（见红框内）。</p>
+<section id="id7">
+<h3>可视化结果<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>在可视化执行模块中点击“执行脚本”后，可在可视化结果模块查看生成的图像结果。对于多张图像，系统提供分页浏览功能，用户可通过翻页查看全部可视化输出（见红框）。</p>
 <img alt="数据可视化-可视化结果" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%BB%93%E6%9E%9C.png" />
-<p>完成数据可视化后，您可以继续进行 <a class="reference external" href="/anystatweb.github.io/tutorial_modeling.html">数据建模</a>。</p>
+<p>完成数据可视化后，您可以根据需求，选择后续操作。</p>
+</section>
 </section>
 </section>
 

@@ -7,7 +7,7 @@
   <title>报告生成模块 &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=82c2d9c0" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
 
   
     <link rel="shortcut icon" href="_static/icon.png"/>
@@ -47,9 +47,10 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_setup.html">通过发行包安装</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul class="current">
@@ -59,9 +60,12 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorial_visualization.html"> 数据可视化模块</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_modeling.html"> 数据建模模块</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"> 报告生成模块</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">报告设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">报告大纲</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">报告展示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">功能特点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">操作教程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">报告设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">报告大纲</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -99,20 +103,31 @@
 <h1>报告生成模块<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>报告生成是数据分析的最后一步，Anystat 提供了便捷的报告生成功能，帮助您快速生成专业的数据分析报告。</p>
 <section id="id2">
-<h2>报告设置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>在报告设置模块设置报告详细程度、报告日期、报告作者、报告格式、生成要求，<strong>先不要点击“生成报告”按钮</strong>。</p>
-<img alt="报告生成-报告设置" src="_images/%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90-%E6%8A%A5%E5%91%8A%E8%AE%BE%E7%BD%AE.png" />
+<h2>功能特点<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h3><span class="highlight-text">交互式目录编辑</span></h3><ul class="simple">
+<li><p>相较于传统的“提出需求等待完整报告生成再行修改”的模式，系统采用先生成目录、后生成报告的机制。用户可先基于目录进行调整，Report Agent 再据此生成完整报告，在生成速度与需求匹配度之间实现平衡。</p></li>
+</ul>
+<h3><span class="highlight-text">分层递进生成策略</span></h3><ul class="simple">
+<li><p>在多个 Agent 汇总分析结果后，Report Agent 采用“框架先行、细节递进”的生成模式，以高效整合与分配资源，避免内容重复，确保报告深度，并支持超长报告的撰写。</p></li>
+</ul>
+<h3><span class="highlight-text">并行化报告生成</span></h3><ul class="simple">
+<li><p>在报告框架确定后，系统支持各小节内容的并行生成，以高效提升报告生成速度。</p></li>
+</ul>
 </section>
 <section id="id3">
-<h2>报告大纲<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p>在报告大纲模块下可编辑目录结构并生成目录：</p>
-<img alt="报告生成-报告大纲" src="_images/%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90-%E6%8A%A5%E5%91%8A%E5%A4%A7%E7%BA%B2.png" />
-</section>
+<h2>操作教程<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="id4">
-<h2>报告展示<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<p>完成目录编辑后，在报告设置中点击 “生成报告”，在报告展示模块下可下载报告，生成并自动下载 PDF：</p>
-<img alt="报告生成-报告展示" src="_images/%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90-%E6%8A%A5%E5%91%8A%E5%B1%95%E7%A4%BA.png" />
-<p>完成报告生成后，您的数据分析流程就全部完成了！如有其他需求，可参考 <a class="reference external" href="/anystatweb.github.io/examples.html">使用示例</a> 和 <a class="reference external" href="/anystatweb.github.io/resources.html">相关资源</a> 章节。</p>
+<h3>报告设置<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>在报告设置模块中，用户可配置报告的详细程度、生成日期、作者信息、格式及生成要求，并可根据需求选择并行或串行的生成模式。</p>
+<img alt="报告生成-报告设置" src="_images/%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90-%E6%8A%A5%E5%91%8A%E8%AE%BE%E7%BD%AE.png" />
+</section>
+<section id="id5">
+<h3>报告大纲<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>在报告大纲模块中，用户可生成报告目录，并对目录结构进行编辑与优化。
+完成目录编辑后，用户可在报告设置模块中点击“生成报告”按钮。报告生成完成后，系统将自动启动下载，用户可直接获取生成的报告文件。</p>
+<img alt="报告生成-报告大纲" src="_images/%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90-%E6%8A%A5%E5%91%8A%E5%A4%A7%E7%BA%B2.png" />
+<p>完成报告生成后，恭喜您完成数据分析全流程🎉！如有其他需求，可参考 <a class="reference external" href="/anystatweb.github.io/examples.html">使用示例</a> 和 <a class="reference external" href="/anystatweb.github.io/resources.html">相关资源</a> 章节。</p>
+</section>
 </section>
 </section>
 

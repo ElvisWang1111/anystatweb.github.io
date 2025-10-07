@@ -4,10 +4,10 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Anystat’s documentation! &mdash; Anystat 1.0 documentation</title>
+  <title>Welcome to Anystat’s documentation 🎉 ! &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=82c2d9c0" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
 
   
     <link rel="shortcut icon" href="_static/icon.png"/>
@@ -23,7 +23,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="安装部署" href="installation.html" /> 
+    <link rel="next" title="通过源码安装" href="installation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,9 +46,10 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_setup.html">通过发行包安装</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul>
@@ -79,7 +80,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Welcome to Anystat’s documentation!</li>
+      <li class="breadcrumb-item active">Welcome to Anystat’s documentation 🎉 !</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -90,33 +91,31 @@
            <div itemprop="articleBody">
              
   <section id="welcome-to-anystat-s-documentation">
-<h1>Welcome to Anystat’s documentation!<a class="headerlink" href="#welcome-to-anystat-s-documentation" title="Link to this heading"></a></h1>
-<blockquote class="epigraph">
-<div><p>零基础入门指南：Anystat 可视化数据分析 Agent 使用手册</p>
-</div></blockquote>
+<h1>Welcome to Anystat’s documentation 🎉 !<a class="headerlink" href="#welcome-to-anystat-s-documentation" title="Link to this heading"></a></h1>
 <section id="anystat">
-<h2>Anystat简介<a class="headerlink" href="#anystat" title="Link to this heading"></a></h2>
-<p>“Anystat” 是一个基于 Streamlit 的可视化数据分析 agent，无需编程基础即可轻松完成数据导入、预处理、分析与报告生成全流程，大幅简化与大语言模型的交互流程。
-无论你是数据分析的小白还是能玩转数据的大师，Anystat 都可以帮助你快速完成数据分析并生成报告。</p>
+<h2>Anystat 简介<a class="headerlink" href="#anystat" title="Link to this heading"></a></h2>
+<p>Anystat，致力于成为用户数据分析的 copilot 。</p>
+<p>我们正在寻求一个入门友好、覆盖数据分析端到端流程、可通过与用户多轮交互持续优化效果，并具备承载未来五年 LLM 技术迭代能力的数据分析 Agent 框架，助你高效推进每一步分析任务。</p>
 </section>
 <section id="id1">
 <h2>功能特点<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p>支持数据文件拖拽上传</p></li>
-<li><p>自动数据概览和可视化</p></li>
-<li><p>智能数据预处理</p></li>
-<li><p>交互式统计分析</p></li>
-<li><p>一键生成分析报告</p></li>
+<h3><span class="highlight-text">全流程覆盖，模块化重构数据分析</span></h3><ul class="simple">
+<li><p>Anystat 覆盖导入、预处理、可视化、建模与报告生成五个流程。针对每一流程内任务的采用模块化设计，专职 Agent 负责，将 Agent 的能力无缝融入数据分析。</p></li>
+</ul>
+<h3><span class="highlight-text">编写代码，释放数据分析潜能</span></h3><ul class="simple">
+<li><p>Coding 兼容工具调用与自主开发。 Agent 不仅能精准理解用户需求，灵活调用现有工具，还可根据需求自主编写新工具，真正实现用户意图，兼顾稳定性与灵活性。</p></li>
+</ul>
+<h3><span class="highlight-text">自动模式，让AI主导数据分析</span></h3><ul class="simple">
+<li><p>面向小白用户，简单上手操作。只需上传数据，剩下交给 Agent 负责。内置 Planning Agent 自动分解任务、智能分工。一键实现高质量数据分析报告。</p></li>
+</ul>
+<h3><span class="highlight-text">专业报告，一键生成完整分析</span></h3><ul class="simple">
+<li><p>多智能体协作自动生成初步目录，用户可灵活调整。 Report Agent 基于最终目录，从概要到细节一键输出图文并茂的专业级数据分析报告。</p></li>
 </ul>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
+<p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#id2">环境准备</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#id3">安装步骤</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#id4">安装常见问题及解决方案</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_setup.html">通过发行包安装</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -148,7 +147,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="installation.html" class="btn btn-neutral float-right" title="安装部署" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="通过源码安装" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

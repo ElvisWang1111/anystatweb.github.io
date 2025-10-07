@@ -7,7 +7,7 @@
   <title>首次启动与 API 配置 &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=82c2d9c0" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
 
   
     <link rel="shortcut icon" href="_static/icon.png"/>
@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="数据导入模块" href="tutorial_loading.html" />
-    <link rel="prev" title="安装部署" href="installation.html" /> 
+    <link rel="prev" title="通过发行包安装" href="installation_setup.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,9 +47,10 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_setup.html">通过发行包安装</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul class="current">
@@ -100,7 +101,7 @@
 <section id="id1">
 <h2>启动应用<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ol class="arabic">
-<li><p>若虚拟环境没有启用（可通过终端左侧是否有圆括号包围的环境名称判断），则使用以下命令启用：</p>
+<li><p>激活虚拟环境，使用以下命令启用：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>Anystat
 </pre></div>
 </div>
@@ -117,22 +118,21 @@
 </section>
 <section id="id3">
 <h2>API 配置<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p><strong>本程序运行需要提供 API key 来请求大模型调用，费用由用户承担。</strong>
-目前支持的平台：ChatGPT、Deepseek、通义千问和智谱AI。
-在使用前，请在左侧边栏选择相应的大模型，填入 API key 并保存。</p>
-<p>API 获取方法详见 <a class="reference external" href="/anystatweb.github.io/resources.html#api-key">API key 获取途径</a>。</p>
+<p><strong>本程序运行需要 API key 来请求大模型调用。</strong></p>
+<p>目前支持的平台：ChatGPT、Deepseek、通义千问和智谱AI。</p>
+<p>在使用前，请在左侧边栏选择相应的大模型，填入 API key 并保存。保存后，API key 将保存于本地 <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.toml</span></code> 目录下。
+获取 API 详见 <a class="reference external" href="/anystatweb.github.io/resources.html#api-key">API key 获取途径</a>。</p>
 </section>
 <section id="id4">
 <h2>结束运行<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<ul>
-<li><p>直接关闭浏览器 <strong>不会</strong> 释放占用的端口。
-请在运行该应用的终端中按 <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> 来停止进程并关闭端口。</p></li>
-<li><p>若需退出虚拟环境，请执行：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>deactivate
+<p>直接关闭浏览器 <strong>不会</strong> 释放占用的端口。
+请在运行该应用的终端中使用 <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> 停止进程并关闭端口。</p>
+<p>若需退出虚拟环境，请执行：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>deactivate
 </pre></div>
 </div>
-</li>
-</ul>
+</div></blockquote>
 </section>
 </section>
 
@@ -140,7 +140,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="installation.html" class="btn btn-neutral float-left" title="安装部署" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation_setup.html" class="btn btn-neutral float-left" title="通过发行包安装" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="tutorial_loading.html" class="btn btn-neutral float-right" title="数据导入模块" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

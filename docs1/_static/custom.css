@@ -3,3 +3,14 @@ img {
     max-width: 75% !important;
     height: auto !important;
 }
+
+.highlight-text {
+    background: linear-gradient(90deg, #005a9b, #1095dc);  /* 渐变色 */
+    color: white;
+    padding: 0 8px;
+    border-radius: 4px;
+    box-decoration-break: clone; /* 让多行文字背景不断 */
+    -webkit-box-decoration-break: clone;
+  }
+  
+  

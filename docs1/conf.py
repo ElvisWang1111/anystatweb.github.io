@@ -35,7 +35,7 @@ release = '1.0'
 # extensions = [
 # ]
 extensions = [
-    'sphinx_rtd_theme'  # 把 Read the Docs 主题作为扩展加载
+    "sphinx_rtd_theme",
 ]
 
 # Add any paths that contain templates here, relative to this directory.

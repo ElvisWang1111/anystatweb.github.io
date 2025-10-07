@@ -7,7 +7,7 @@
   <title>数据预处理模块 &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=82c2d9c0" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
 
   
     <link rel="shortcut icon" href="_static/icon.png"/>
@@ -47,19 +47,24 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_setup.html">通过发行包安装</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial_startup.html"> 首次启动与 API 配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_loading.html"> 数据导入模块</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"> 数据预处理模块</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">预处理展示</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">预处理建议</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">预处理执行</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">预处理结果</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">功能特点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">操作教程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">预处理展示</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">预处理建议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">预处理执行</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">预处理结果</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_visualization.html"> 数据可视化模块</a></li>
@@ -98,36 +103,49 @@
              
   <section id="id1">
 <h1>数据预处理模块<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<p>数据预处理是数据分析过程中的重要环节。Anystat 提供了智能的数据预处理功能，帮助您快速清洗和准备数据。</p>
+<p>数据预处理是数据分析过程中的重要环节。Anystat 提供了 Preprocessing Agent 负责数据预处理，帮助您快速清洗和准备数据。</p>
 <section id="id2">
-<h2>预处理展示<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>预处理展示模块展示列名、数据类型、非空值数量及缺失值比例，以便确定预处理建议。</p>
-<img alt="数据预处理-预处理展示" src="_images/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86-%E9%A2%84%E5%A4%84%E7%90%86%E5%B1%95%E7%A4%BA.png" />
+<h2>功能特点<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h3><span class="highlight-text">预处理操作建议</span></h3><ul class="simple">
+<li><p>除了根据您的数据预处理需求执行操作外， Preprocessing Agent 还可在理解数据集特征的基础上，自动生成预处理建议，协助完成缺失值处理、异常值检测及数据标准化等任务。</p></li>
+</ul>
+<h3><span class="highlight-text">代码执行预处理</span></h3><ul class="simple">
+<li><p>Preprocessing Agent 可根据系统建议或用户需求，以自动生成代码的方式灵活地执行数据预处理操作。若运行过程中出现错误， Agent 将自动分析并尝试修复。</p></li>
+</ul>
+<h3><span class="highlight-text">预处理结果下载</span></h3><ul class="simple">
+<li><p>数据预处理完成后，系统提供结果下载按钮，用户可直接获取预处理后的数据集。</p></li>
+</ul>
 </section>
 <section id="id3">
-<h2>预处理建议<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p>与 agent 进行交互获取数据预处理建议，建议生成后，在对话栏下方会弹出 “根据 LLM 意见进行预处理” 按钮，点击即可生成可执行的 Python 脚本代码。</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>若有多个需求，可以分多次输入，无需一次性询问 agent。也可以点击按钮和对话兼有，agent 也会处理您的请求。</p>
-</div>
+<h2>操作教程<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>预处理展示<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>预处理展示模块显示各列的名称、数据类型、非空值数量及缺失值比例，用于辅助制定预处理方案。</p>
+<img alt="数据预处理-预处理展示" src="_images/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86-%E9%A2%84%E5%A4%84%E7%90%86%E5%B1%95%E7%A4%BA.png" />
+</section>
+<section id="id5">
+<h3>预处理建议<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>用户可通过与 Preprocessing Agent 交互获取数据预处理建议。
+当建议生成后，系统将在对话栏下方显示 “🔧 生成预处理代码” 按钮，点击该按钮即可自动生成可执行的 Python 预处理脚本。</p>
 <img alt="数据预处理-预处理建议" src="_images/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86-%E9%A2%84%E5%A4%84%E7%90%86%E5%BB%BA%E8%AE%AE.png" />
 <img alt="代码生成" src="_images/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86-%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90.png" />
 </section>
-<section id="id4">
-<h2>预处理执行<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<p>在预处理执行模块下可对生成代码进行修改和执行。</p>
+<section id="id6">
+<h3>预处理执行<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>在预处理执行模块中，用户可对生成的预处理代码进行编辑与执行，以灵活调整数据处理流程。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>运行过程中可能会多次报错，但 Anystat 助手会帮您修复 bug，无需人工检查。</p>
+<p>大模型生成的代码可能存在错误，运行过程中如发生异常，Preprocessing Agent 将自动分析并尝试修复。</p>
 </div>
 <img alt="数据预处理-预处理执行" src="_images/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86-%E9%A2%84%E5%A4%84%E7%90%86%E6%89%A7%E8%A1%8C.png" />
 </section>
-<section id="id5">
-<h2>预处理结果<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
-<p>在预处理结果模块下可查看处理前后数据和下载处理好的数据。</p>
+<section id="id7">
+<h3>预处理结果<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>在预处理结果模块中，用户可以对比查看数据处理前后的变化，并可下载已处理完成的数据集。
+数据预处理完成后，Preprocessing Agent 将自动与其他 Agent 进行通信，并在后续步骤中优先使用预处理后的数据集，无需用户额外操作。</p>
 <img alt="数据预处理-预处理结果" src="_images/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86-%E9%A2%84%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C.png" />
-<p>完成数据预处理后，您可以继续进行 <a class="reference external" href="/anystatweb.github.io/data-visualization.html">数据可视化</a>。</p>
+<p>完成数据预处理后，您可以根据需求，选择后续操作。</p>
+</section>
 </section>
 </section>
 
