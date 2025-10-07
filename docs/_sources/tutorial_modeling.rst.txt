@@ -36,12 +36,4 @@
 .. image:: images/建模分析-训练结果.png
    :alt: 建模分析-训练结果
 
-推断分析
---------
-
-完成建模任务后，推断分析模块通道开启，可上传待推断的数据，根据最佳模型进行推断。
-
-.. image:: images/建模分析-推断分析.png
-   :alt: 建模分析-推断分析
-
 完成数据建模后，您可以继续进行 `报告生成 </anystatweb.github.io/tutorial-report.html>`_。  
