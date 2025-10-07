@@ -55,3 +55,12 @@ Thumbs.db
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
+
+# Sphinx documentation build outputs
+docs/.doctrees
+docs/.buildinfo
+docs/searchindex.js
+docs/_sources
+docs/_images
+docs/_static
+*.html
