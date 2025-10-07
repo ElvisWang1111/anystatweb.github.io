@@ -20,7 +20,7 @@ CURR_PATH = Path(__file__).absolute().parent
 # -- Project information -----------------------------------------------------
 
 project = 'Anystat'
-# copyright = '2025, Microsoft Corporation'
+copyright = '© 2025 Anystat Team. All rights reserved.'
 author = 'Anystat Team'
 
 # The full version, including alpha/beta/rc tags
