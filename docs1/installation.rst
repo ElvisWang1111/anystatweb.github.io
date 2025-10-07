@@ -15,6 +15,7 @@
 以下安装步骤均在终端中进行。若未下载 Github Desktop，则不使用第一步，把从 GitHub 上下载的 ``.zip`` 文件在本地文件夹解压缩。
 
 1. 克隆项目到本地
+
    .. code-block:: bash
 
    # 如果使用 Github Desktop，在终端中执行以下命令：
@@ -22,6 +23,7 @@
    # 否则，直接从 GitHub 下载 ZIP 文件并解压
 
 2. 将工作目录转到 Anystat 本体文件所在文件夹
+
    .. code-block:: bash
 
    cd (your working directory)
@@ -29,12 +31,14 @@
    其中将括号内的内容替换为 Anystat 的文件夹地址即可。
 
 3. 创建虚拟环境
+
    .. code-block:: bash
 
    conda create --name Anystat
    conda activate Anystat
 
 4. 安装依赖项
+
    .. code-block:: bash
    
       pip install -r requirements.txt
@@ -51,11 +55,13 @@
 **Windows 端** 
 
 从 Python 的 `官方站点 <https://www.python.org/>`_ 下载 Python 3.9 及以上的安装包，安装时务必勾选 **Add Python 3.x to PATH**。安装后打开终端输入
+
    .. code-block:: bash
 
    python --version
 
 只要输出
+
    .. code-block:: bash
 
    Python (*version*)
@@ -70,16 +76,20 @@ macOS 通常预装较低版本的 Python，安装方法与 Windows 类似，详�
 
 **Linux 端**
 
-Linux/Ubuntu 通常已内置 Python，只需升级或检查版本即可。若要更新 Python，请在终端中输入::
+Linux/Ubuntu 通常已内置 Python，只需升级或检查版本即可。若要更新 Python，请在终端中输入
+
+   .. code-block:: bash
 
    sudo apt update
 
 如果想要安装指定版本，则输入
+
    .. code-block:: bash
 
    sudo apt install python3.x
 
 将 ``3.x`` 替换为所需版本即可。安装后可验证版本，以 Python 3.12.7 为例，输入
+
    .. code-block:: bash
 
    python3.12 --version

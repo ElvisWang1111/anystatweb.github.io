@@ -105,29 +105,34 @@
 <h2>安装步骤<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>以下安装步骤均在终端中进行。若未下载 Github Desktop，则不使用第一步，把从 GitHub 上下载的 <code class="docutils literal notranslate"><span class="pre">.zip</span></code> 文件在本地文件夹解压缩。</p>
 <ol class="arabic">
-<li><p>克隆项目到本地
-.. code-block:: bash</p>
+<li><p>克隆项目到本地</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 <p># 如果使用 Github Desktop，在终端中执行以下命令：
 gh repo clone ElvisWang1111/AAAAAnystat
 # 否则，直接从 GitHub 下载 ZIP 文件并解压</p>
 </li>
-<li><p>将工作目录转到 Anystat 本体文件所在文件夹
-.. code-block:: bash</p>
+<li><p>将工作目录转到 Anystat 本体文件所在文件夹</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 <p>cd (your working directory)</p>
 <p>其中将括号内的内容替换为 Anystat 的文件夹地址即可。</p>
 </li>
-<li><p>创建虚拟环境
-.. code-block:: bash</p>
+<li><p>创建虚拟环境</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 <p>conda create –name Anystat
 conda activate Anystat</p>
 </li>
-<li><p>安装依赖项
-.. code-block:: bash</p>
-<blockquote>
-<div><p>pip install -r requirements.txt
-pip install playwright
-playwright install</p>
-</div></blockquote>
+<li><p>安装依赖项</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+pip<span class="w"> </span>install<span class="w"> </span>playwright
+playwright<span class="w"> </span>install
+</pre></div>
+</div>
 </li>
 </ol>
 </section>
@@ -136,39 +141,46 @@ playwright install</p>
 <p><strong>Q</strong>: 如何准备 Python 环境？</p>
 <p><strong>A</strong>: 不同运行环境的准备方式如下：</p>
 <p><strong>Windows 端</strong></p>
-<dl>
-<dt>从 Python 的 <a class="reference external" href="https://www.python.org/">官方站点</a> 下载 Python 3.9 及以上的安装包，安装时务必勾选 <strong>Add Python 3.x to PATH</strong>。安装后打开终端输入</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<p>从 Python 的 <a class="reference external" href="https://www.python.org/">官方站点</a> 下载 Python 3.9 及以上的安装包，安装时务必勾选 <strong>Add Python 3.x to PATH</strong>。安装后打开终端输入</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 <p>python –version</p>
-</dd>
-<dt>只要输出</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</div></blockquote>
+<p>只要输出</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 <p>Python (<em>version</em>)</p>
-</dd>
-</dl>
+</div></blockquote>
 <p>其中 <code class="docutils literal notranslate"><span class="pre">(*version*)</span></code> 是实际输出的版本，应不低于 3.9，则说明安装成功。</p>
 <p>安装 Anaconda 请在 <a class="reference external" href="https://www.anaconda.com/download">官方站点</a> 下载并安装。</p>
 <p><strong>Mac 端</strong></p>
 <p>macOS 通常预装较低版本的 Python，安装方法与 Windows 类似，详情请参见 <a class="reference external" href="https://www.python.org/downloads/macos/">官方站点</a>，下载 <code class="docutils literal notranslate"><span class="pre">.pkg</span></code> 文件并安装对应版本。</p>
 <p><strong>Linux 端</strong></p>
-<p>Linux/Ubuntu 通常已内置 Python，只需升级或检查版本即可。若要更新 Python，请在终端中输入:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<p>Linux/Ubuntu 通常已内置 Python，只需升级或检查版本即可。若要更新 Python，请在终端中输入</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
-<dl>
-<dt>如果想要安装指定版本，则输入</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<p>sudo apt update</p>
+</div></blockquote>
+<p>如果想要安装指定版本，则输入</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 <p>sudo apt install python3.x</p>
-</dd>
-<dt>将 <code class="docutils literal notranslate"><span class="pre">3.x</span></code> 替换为所需版本即可。安装后可验证版本，以 Python 3.12.7 为例，输入</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</div></blockquote>
+<p>将 <code class="docutils literal notranslate"><span class="pre">3.x</span></code> 替换为所需版本即可。安装后可验证版本，以 Python 3.12.7 为例，输入</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 <p>python3.12 –version</p>
-</dd>
-</dl>
+</div></blockquote>
 <p>即可获得版本号。</p>
 </section>
 </section>
