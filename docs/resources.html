@@ -9,6 +9,7 @@
   <title>相关资源 &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=82c2d9c0" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -26,7 +27,7 @@
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
 
           
           
@@ -41,11 +42,11 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_startup.html"> 首次启动与 API 配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_loading.html"> 数据导入模块</a></li>
@@ -54,10 +55,10 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorial_modeling.html"> 数据建模模块</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_report.html"> 报告生成模块</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Extending</span></p>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Resources</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">使用示例</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">相关资源</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">常见错误处理</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#api">API 相关问题</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">数据处理相关问题</a></li>
@@ -75,13 +76,13 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Anystat</a>
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
@@ -115,11 +116,11 @@
 <section id="id3">
 <h3>数据处理相关问题<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul>
-<li><p><strong>问题</strong>：数据上传失败</p>
-<p><strong>解决方案</strong>：请检查文件格式是否支持，文件大小是否超过限制。对于大文件，建议使用路径导入方式。</p>
+<li><p><strong>Q</strong>：数据上传失败</p>
+<p><strong>A</strong>：请检查文件格式是否支持，文件大小是否超过限制。对于大文件，建议使用路径导入方式。</p>
 </li>
-<li><p><strong>问题</strong>：预处理/建模/可视化代码执行失败</p>
-<p><strong>解决方案</strong>：Anystat 助手会尝试自动修复 bug，请耐心等待。如果多次尝试后仍失败，可能需要手动调整代码或简化任务需求。</p>
+<li><p><strong>Q</strong>：预处理/建模/可视化代码执行失败</p>
+<p><strong>A</strong>：Anystat 助手会尝试自动修复 bug，请耐心等待。如果多次尝试后仍失败，可能需要手动调整代码或简化任务需求。</p>
 </li>
 </ul>
 </section>
@@ -137,10 +138,10 @@
 <h2>API key 获取途径<a class="headerlink" href="#api-key" title="Link to this heading"></a></h2>
 <p>Anystat 支持多种大模型 API，您可以通过以下途径获取相应的 API key：</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://platform.deepseek.com/usage">Deepseek API key</a> （单击以访问 Deepseek 开放平台）</p></li>
-<li><p><a class="reference external" href="https://platform.openai.com/docs/overview">ChatGPT API key</a> （单击以访问 OpenAI Platform，<strong>需要信用卡支付</strong>）</p></li>
-<li><p><a class="reference external" href="https://bailian.console.aliyun.com/?spm=5176.29597918.J_SEsSjsNv72yRuRFS2VknO.2.54d87b08CphuY5&amp;tab=model#/efm/model_experience_center/text">通义千问 API key</a> （单击以访问阿里云百炼平台，<strong>提供一定量免费额度</strong>）</p></li>
-<li><p><a class="reference external" href="https://docs.bigmodel.cn/cn/guide/develop/http/introduction">智谱AI</a> （单击以访问智谱AI API 调用说明页）</p></li>
+<li><p><a class="reference external" href="https://platform.deepseek.com/usage">Deepseek API key</a></p></li>
+<li><p><a class="reference external" href="https://platform.openai.com/docs/overview">ChatGPT API key</a> （<strong>需要信用卡支付</strong>）</p></li>
+<li><p><a class="reference external" href="https://bailian.console.aliyun.com/?spm=5176.29597918.J_SEsSjsNv72yRuRFS2VknO.2.54d87b08CphuY5&amp;tab=model#/efm/model_experience_center/text">通义千问 API key</a> （<strong>提供一定量免费额度</strong>）</p></li>
+<li><p><a class="reference external" href="https://docs.bigmodel.cn/cn/guide/develop/http/introduction">智谱AI</a></p></li>
 </ul>
 </section>
 <section id="id6">

@@ -44,4 +44,4 @@
 .. image:: images/建模分析-推断分析.png
    :alt: 建模分析-推断分析
 
-完成数据建模后，您可以继续进行 `报告生成 </anystatweb.github.io/report-generation.html>`_。  
+完成数据建模后，您可以继续进行 `报告生成 </anystatweb.github.io/tutorial-report.html>`_。  

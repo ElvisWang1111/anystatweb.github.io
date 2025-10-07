@@ -27,4 +27,4 @@
 .. image:: images/报告生成-报告展示.png
    :alt: 报告生成-报告展示
 
-完成报告生成后，您的数据分析流程就全部完成了！如有其他需求，可参考 `使用示例 <../examples.html>`_ 和 `相关资源 <../resources.html>`_ 章节。  
+完成报告生成后，您的数据分析流程就全部完成了！如有其他需求，可参考 `使用示例 </anystatweb.github.io/examples.html>`_ 和 `相关资源 </anystatweb.github.io/resources.html>`_ 章节。  

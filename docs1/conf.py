@@ -35,7 +35,7 @@ release = '1.0'
 # extensions = [
 # ]
 extensions = [
-    'sphinx_rtd_theme',  # 把 Read the Docs 主题作为扩展加载
+    'sphinx_rtd_theme'  # 把 Read the Docs 主题作为扩展加载
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,6 +60,9 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'includehidden': False,
     'logo_only': True,
+    'body_max_width': '100%',
+    'style_external_links': True,
+    'style_nav_header_background': '#2980B9'
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

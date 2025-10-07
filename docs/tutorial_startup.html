@@ -9,6 +9,7 @@
   <title>首次启动与 API 配置 &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=82c2d9c0" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -27,7 +28,7 @@
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
 
           
           
@@ -42,16 +43,16 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">环境配置</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">安装部署</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#"> 首次启动与 API 配置</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">启动应用</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">API 配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">结束运行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">API 配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">结束运行</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_loading.html"> 数据导入模块</a></li>
@@ -60,23 +61,23 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorial_modeling.html"> 数据建模模块</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial_report.html"> 报告生成模块</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Extending</span></p>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">相关资源</a></li>
 </ul>
 
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Anystat</a>
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
@@ -99,7 +100,7 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>Anystat
 </pre></div>
 </div>
-<p>其中 <cite>Anystat</cite> 为在 [安装部署](../installation.md) 章节创建的虚拟环境名称。</p>
+<p>其中 <code class="docutils literal notranslate"><span class="pre">Anystat</span></code> 为在 <a class="reference external" href="/anystat.github.io/installation.html">安装部署</a> 章节创建的虚拟环境名称。</p>
 </li>
 <li><p>启动应用：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>streamlit<span class="w"> </span>run<span class="w"> </span>app.py
@@ -110,15 +111,15 @@
 若浏览器未自动跳转，可将终端中显示的地址复制并粘贴至浏览器地址栏后回车。</p></li>
 </ol>
 </section>
-<section id="id2">
-<h2>API 配置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<section id="id3">
+<h2>API 配置<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p><strong>本程序运行需要提供 API key 来请求大模型调用，费用由用户承担。</strong>
 目前支持的平台：ChatGPT、Deepseek、通义千问和智谱AI。
 在使用前，请在左侧边栏选择相应的大模型，填入 API key 并保存。</p>
-<p>API 获取方法详见 [API key 获取途径](../resources.md#api-key获取途径)。</p>
+<p>API 获取方法详见 <a class="reference external" href="/anystat.github.io/resources.html#api-key">API key 获取途径</a>。</p>
 </section>
-<section id="id3">
-<h2>结束运行<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h2>结束运行<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul>
 <li><p>直接关闭浏览器 <strong>不会</strong> 释放占用的端口。
 请在运行该应用的终端中按 <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> 来停止进程并关闭端口。</p></li>

@@ -22,13 +22,13 @@ API 相关问题
 数据处理相关问题
 ~~~~~~~~~~~~~~
 
-- **问题**：数据上传失败
+- **Q**：数据上传失败
 
-  **解决方案**：请检查文件格式是否支持，文件大小是否超过限制。对于大文件，建议使用路径导入方式。
+  **A**：请检查文件格式是否支持，文件大小是否超过限制。对于大文件，建议使用路径导入方式。
 
-- **问题**：预处理/建模/可视化代码执行失败
+- **Q**：预处理/建模/可视化代码执行失败
 
-  **解决方案**：Anystat 助手会尝试自动修复 bug，请耐心等待。如果多次尝试后仍失败，可能需要手动调整代码或简化任务需求。
+  **A**：Anystat 助手会尝试自动修复 bug，请耐心等待。如果多次尝试后仍失败，可能需要手动调整代码或简化任务需求。
 
 部分教程示例
 ------------
@@ -44,10 +44,10 @@ API key 获取途径
 
 Anystat 支持多种大模型 API，您可以通过以下途径获取相应的 API key：
 
-- `Deepseek API key <https://platform.deepseek.com/usage>`_ （单击以访问 Deepseek 开放平台）  
-- `ChatGPT API key <https://platform.openai.com/docs/overview>`_ （单击以访问 OpenAI Platform，**需要信用卡支付**）  
-- `通义千问 API key <https://bailian.console.aliyun.com/?spm=5176.29597918.J_SEsSjsNv72yRuRFS2VknO.2.54d87b08CphuY5&tab=model#/efm/model_experience_center/text>`_ （单击以访问阿里云百炼平台，**提供一定量免费额度**）  
-- `智谱AI <https://docs.bigmodel.cn/cn/guide/develop/http/introduction>`_ （单击以访问智谱AI API 调用说明页）
+- `Deepseek API key <https://platform.deepseek.com/usage>`_
+- `ChatGPT API key <https://platform.openai.com/docs/overview>`_ （**需要信用卡支付**）  
+- `通义千问 API key <https://bailian.console.aliyun.com/?spm=5176.29597918.J_SEsSjsNv72yRuRFS2VknO.2.54d87b08CphuY5&tab=model#/efm/model_experience_center/text>`_ （**提供一定量免费额度**）  
+- `智谱AI <https://docs.bigmodel.cn/cn/guide/develop/http/introduction>`_
 
 反馈途径
 --------
