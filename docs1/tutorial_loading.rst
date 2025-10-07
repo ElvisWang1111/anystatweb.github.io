@@ -46,4 +46,4 @@ Anystat 提供了两种数据上传方式：
 .. note::
    建议上传的数据列数少一些，不超过 15 列，否则会大大延长分析的时间。
 
-完成数据导入后，您可以继续进行 `数据预处理 <data-preprocessing.md>`_。  
+完成数据导入后，您可以继续进行 `数据预处理 </anystatweb.github.io/data-preprocessing.html>`_。  
