@@ -1,0 +1,5 @@
+/* Custom styles for Anystat documentation */
+img {
+    max-width: 75% !important;
+    height: auto !important;
+}

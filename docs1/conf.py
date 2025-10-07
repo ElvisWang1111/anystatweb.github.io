@@ -66,4 +66,9 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# 添加自定义CSS文件
+html_css_files = [
+    'custom.css',
+]
+
 # html_logo = str(CURR_PATH / 'logo.png')
