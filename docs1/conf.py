@@ -74,4 +74,5 @@ html_css_files = [
     'custom.css',
 ]
 
-# html_logo = str(CURR_PATH / 'logo.png')
+html_logo = str(CURR_PATH / 'icon.png')
+html_favicon = str(CURR_PATH / 'icon.png')
