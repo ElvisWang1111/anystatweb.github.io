@@ -16,7 +16,8 @@
 
 与 agent 进行交互获取可视化建议，建议生成后，在对话栏下方会弹出 “根据 LLM 意见生成代码” 按钮，点击即可生成可执行的 Python 脚本代码。
 
-> 运行过程中可能会多次报错，但 Anystat 助手会帮您修复 bug，无需人工检查。
+.. note::
+   运行过程中可能会多次报错，但 Anystat 助手会帮您修复 bug，无需人工检查。
 
 .. image:: images/数据可视化-可视化建议.png
    :alt: 数据可视化-可视化建议
@@ -40,4 +41,4 @@
 .. image:: images/数据可视化-可视化结果.png
    :alt: 数据可视化-可视化结果
 
-完成数据可视化后，您可以继续进行 `数据建模 </anystatweb.github.io/docs/tutorial_modeling.html>`_。  
+完成数据可视化后，您可以继续进行 `数据建模 </anystatweb.github.io/tutorial_modeling.html>`_。  
