@@ -3,18 +3,3 @@ img {
     max-width: 75% !important;
     height: auto !important;
 }
-
-.wy-nav-content-wrap {
-    margin-left: 0 !important;
-}
-
-.wy-nav-content {
-    max-width: 100% !important;
-    margin: auto !important;
-}
-
-@media screen and (min-width: 1400px) {
-    .wy-nav-content {
-        max-width: 100% !important;
-    }
-}
