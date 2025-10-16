@@ -46,7 +46,8 @@ Anystat，致力于成为用户数据分析的 copilot 。
    :caption: 安装部署
 
    通过源码安装 <installation>
-   通过发行包安装 <installation_setup>
+   通过发行包安装（Win） <installation_win>
+   通过发行包安装（Mac） <installation_mac>
       
 .. toctree::
    :maxdepth: 1

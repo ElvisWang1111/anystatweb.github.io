@@ -1,4 +1,4 @@
-通过发行包安装
+通过发行包安装（Win）
 ========
 
 下载链接
@@ -6,6 +6,6 @@
 
 为了能够尽可能降低用户操作门槛， Anystat 同样提供通过发行包的方式安装。 
 
-`下载链接 <https://zhuanlan.zhihu.com/p/1941167588743811204>`_
+`下载链接（coming soon） <https://zhuanlan.zhihu.com/p/1941167588743811204>`_
 
 安装后，仅需双击 ``Anystat.exe`` 即可在浏览器中调用 Agent。
