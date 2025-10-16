@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>通过源码安装 &mdash; Anystat 1.0 documentation</title>
+  <title>通过脚本安装（Mac） &mdash; Anystat 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
@@ -21,8 +21,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="通过发行包安装（Win）" href="installation_win.html" />
-    <link rel="prev" title="Welcome to Anystat’s documentation 🎉 !" href="index.html" /> 
+    <link rel="next" title="首次启动与 API 配置" href="tutorial_startup.html" />
+    <link rel="prev" title="通过发行包安装（Win）" href="installation_win.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,14 +47,13 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">通过源码安装</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">环境准备</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">安装步骤</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">安装常见问题及解决方案</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">通过脚本安装（Mac）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">预先准备</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">一键配置</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="installation_win.html">通过发行包安装（Win）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_mac.html">通过脚本安装（Mac）</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
 <ul>
@@ -85,9 +84,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">通过源码安装</li>
+      <li class="breadcrumb-item active">通过脚本安装（Mac）</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/installation_mac.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -95,54 +94,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>通过源码安装<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+  <section id="mac">
+<h1>通过脚本安装（Mac）<a class="headerlink" href="#mac" title="Link to this heading"></a></h1>
+<p>由于 macOS 平台的安全认证流程较为复杂，<strong>Anystat 推荐使用一键脚本的方式完成环境配置与启动</strong>，无需手动安装依赖或配置浏览器驱动。</p>
+<section id="id1">
+<h2>预先准备<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>请先安装 <cite>Anaconda</cite> 或 <cite>Miniconda</cite>，用于创建独立的 Python 环境。</p>
+<p>安装地址： <a class="reference external" href="https://www.anaconda.com/download">https://www.anaconda.com/download</a></p>
+</section>
 <section id="id2">
-<h2>环境准备<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p><strong>操作系统</strong>：Windows/Linux/MacOS</p></li>
-<li><p><strong>Python版本</strong>：Python 3.9+（<em>必须安装，推荐安装 Python 3.11+</em>）</p></li>
-<li><p><strong>Anaconda</strong> （<em>必须安装</em>）</p></li>
-<li><p><strong>Git</strong> （推荐安装）</p></li>
-</ul>
-</section>
-<section id="id3">
-<h2>安装步骤<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<ol class="arabic">
-<li><p>克隆项目到本地
-在终端中执行以下命令，将仓库克隆到当前目录：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ElvisWang1111/AAAAAnystat.git
+<h2>一键配置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>打开 Anystat 程序所在目录，在该目录下打开终端（命令行），执行以下命令：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>setup.sh
 </pre></div>
 </div>
-<p>克隆完成后，当前目录下将生成一个名为 <code class="docutils literal notranslate"><span class="pre">AAAAAnystat</span></code> 的文件夹，其中包含项目的全部源代码。
-若未安装 Git，可跳过此步骤，直接从 GitHub 下载 ZIP 压缩包并进行解压。</p>
-</li>
-<li><p>将工作目录转到 Anystat 本体文件所在文件夹</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>AAAAAnystat
-</pre></div>
-</div>
-</li>
-<li><p>创建虚拟环境</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>anystat<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11
-conda<span class="w"> </span>activate<span class="w"> </span>anystat
-</pre></div>
-</div>
-</li>
-<li><p>安装依赖项</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-pip<span class="w"> </span>install<span class="w"> </span>playwright
-playwright<span class="w"> </span>install
-</pre></div>
-</div>
-</li>
+<p>该脚本将自动完成以下步骤：</p>
+<ol class="arabic simple">
+<li><p>创建或激活名为 <code class="docutils literal notranslate"><span class="pre">anystat_env</span></code> 的 Conda 环境（Python 3.12）；</p></li>
+<li><p>使用 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> 安装项目依赖；</p></li>
+<li><p>安装 Playwright 及其浏览器驱动（<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">playwright</span> <span class="pre">&amp;&amp;</span> <span class="pre">playwright</span> <span class="pre">install</span></code>）；</p></li>
+<li><p>完成后输出启动命令提示。</p></li>
 </ol>
-</section>
-<section id="id4">
-<h2>安装常见问题及解决方案<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<p><strong>Q</strong>: 如何准备 Python 环境？</p>
-<p><strong>A</strong>: 请参考 <a class="reference external" href="https://zhuanlan.zhihu.com/p/1941167588743811204">Python安装教程（全平台保姆级教学）</a></p>
-<p><strong>Q</strong>: 必须配置环境吗？</p>
-<p><strong>A</strong>: 在下一章节中，将提供打包完成的应用程序下载链接，用户可直接进行安装，无需编写任何代码。</p>
+<p>安装完成后，在终端中执行以下命令即可启动 Anystat Agent：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>anystat_env
+streamlit<span class="w"> </span>run<span class="w"> </span>app.py
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -150,8 +127,8 @@ playwright<span class="w"> </span>install
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Anystat’s documentation 🎉 !" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="installation_win.html" class="btn btn-neutral float-right" title="通过发行包安装（Win）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="installation_win.html" class="btn btn-neutral float-left" title="通过发行包安装（Win）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorial_startup.html" class="btn btn-neutral float-right" title="首次启动与 API 配置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

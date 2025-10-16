@@ -47,7 +47,7 @@ Anystat，致力于成为用户数据分析的 copilot 。
 
    通过源码安装 <installation>
    通过发行包安装（Win） <installation_win>
-   通过发行包安装（Mac） <installation_mac>
+   通过脚本安装（Mac） <installation_mac>
       
 .. toctree::
    :maxdepth: 1

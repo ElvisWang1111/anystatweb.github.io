@@ -63,4 +63,4 @@ docs/searchindex.js
 # docs/_sources
 # docs/_images
 # docs/_static
-*.html
+# *.html
