@@ -8,7 +8,6 @@ Anystat，致力于成为用户数据分析的 copilot 。
 
 我们正在寻求一个入门友好、覆盖数据分析端到端流程、可通过与用户多轮交互持续优化效果，并具备承载未来五年 LLM 技术迭代能力的数据分析 Agent 框架，助你高效推进每一步分析任务。
 
-
 功能特点
 ---------
 
@@ -67,8 +66,16 @@ Anystat，致力于成为用户数据分析的 copilot 。
     使用示例 <examples>
     相关资源 <resources>
  
-
 贡献与支持
 -----------
 
 欢迎为项目提供反馈和贡献。如有问题或建议，请通过相关资源中提供的途径与我们联系。  
+
+致谢
+-------
+
+特别感谢邱怡轩老师对本项目的大力支持！点击下方图表以访问他的个人主页：
+
+.. image:: https://img.shields.io/badge/Page-Yixuan-green?style=flat
+   :alt: Static Badge
+   :href: https://github.com/yixuan
