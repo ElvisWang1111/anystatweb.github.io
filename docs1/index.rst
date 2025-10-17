@@ -74,8 +74,8 @@ Anystat，致力于成为用户数据分析的 copilot 。
 致谢
 -------
 
-特别感谢邱怡轩老师对本项目的大力支持！点击下方图表以访问他的个人主页：
+特别感谢邱怡轩老师对本项目的大力支持！点击下方以访问他的个人主页：
 
 .. image:: https://img.shields.io/badge/Page-Yixuan-green?style=flat
+   :traget: https://github.com/yixuan
    :alt: Static Badge
-   :href: https://github.com/yixuan
