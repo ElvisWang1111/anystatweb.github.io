@@ -37,15 +37,6 @@ Streamlit相关问题
 
   **A**： Streamlit 在长时间未操作后，可能会出现 KeyError: 'workflow'、 KeyError: 'workflowworkflow\visualization' 等异常。可通过刷新浏览器页面，或使用 ``ctrl+c`` 停止运行后重新启动 Anystat 以解决此问题。
 
-部分教程示例
-------------
-
-我们提供了一些详细的教程示例，帮助您更好地理解和使用 Anystat 的各项功能：
-
-- 基础数据分析流程教程  
-- 高级建模技术指南  
-- 自定义可视化方法  
-
 API key 获取途径
 -------------
 
