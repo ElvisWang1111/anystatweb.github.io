@@ -36,6 +36,12 @@
      - 123.48±19.30
      - 391.11±40.41
 
+生成报告示例：
+
+ChatGPT-4o： :download:`点击以下载doc文档 </reports/report-wine-4o.docx>`
+
+Deepseek： :download:`点击以下载doc文档 </reports/report-wine-ds.docx>`
+
 
 中等规模数据量示例（1000 条–10000 条）
 ---------------------------------------
@@ -67,6 +73,12 @@
      - 125.02±18.91
      - 364.67±42.61
 
+生成报告示例：
+
+ChatGPT-4o： :download:`点击以下载doc文档 </reports/report-bike-4o.docx>`
+
+Deepseek： :download:`点击以下载doc文档 </reports/report-bike-ds.docx>`
+
 
 大规模数据量示例（>10000 条）
 -----------------------------
@@ -97,6 +109,12 @@
    * - 报告生成
      - 142.34±18.76
      - 375.53±57.79
+
+生成报告示例：
+
+ChatGPT-4o： :download:`点击以下载doc文档 </reports/report-steel-4o.docx>`
+
+Deepseek： :download:`点击以下载doc文档 </reports/report-steel-ds.docx>`
 
 .. note::
    实际耗时可能因硬件配置、网络状况和具体操作而有所不同。由于大模型返回结果不稳定，如果在自动模式下出现预处理、可视化及建模环节 debug 次数过多的情况，请清空数据并重新开始流程；如为手动操作，请切换至其他环节并再切回对应出错环节重试。
