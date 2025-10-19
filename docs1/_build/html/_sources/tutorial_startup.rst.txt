@@ -4,13 +4,13 @@
 启动应用
 --------
 
-1. 若虚拟环境没有启用（可通过终端左侧是否有圆括号包围的环境名称判断），则使用以下命令启用：
+1. 激活虚拟环境，使用以下命令启用：
 
    .. code-block:: bash
 
       conda activate Anystat
 
-   其中 `Anystat` 为在 [安装部署](../installation.md) 章节创建的虚拟环境名称。
+   其中 ``Anystat`` 为在 `安装部署 </anystat.github.io/installation.html>`_ 章节创建的虚拟环境名称。
 
 2. 启动应用：
 
@@ -24,18 +24,20 @@
 API 配置
 --------
 
-**本程序运行需要提供 API key 来请求大模型调用，费用由用户承担。**  
-目前支持的平台：ChatGPT、Deepseek、通义千问和智谱AI。  
-在使用前，请在左侧边栏选择相应的大模型，填入 API key 并保存。
+**本程序运行需要 API key 来请求大模型调用。** 
 
-API 获取方法详见 [API key 获取途径](../resources.md#api-key获取途径)。
+目前支持的平台：ChatGPT、Deepseek、通义千问和智谱AI。
+
+在使用前，请在左侧边栏选择相应的大模型，填入 API key 并保存。保存后，API key 将保存于本地 ``.streamlit/secrets.toml`` 目录下。
+获取 API 详见 `API key 获取途径 </anystatweb.github.io/resources.html#api-key>`_。
 
 结束运行
 --------
 
-- 直接关闭浏览器 **不会** 释放占用的端口。  
-  请在运行该应用的终端中按 ``Ctrl+C`` 来停止进程并关闭端口。  
-- 若需退出虚拟环境，请执行：
+直接关闭浏览器 **不会** 释放占用的端口。  
+请在运行该应用的终端中使用 ``Ctrl+C`` 停止进程并关闭端口。  
+
+若需退出虚拟环境，请执行：
 
   .. code-block:: bash
 

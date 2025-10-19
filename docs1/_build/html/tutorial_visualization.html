@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数据可视化模块 &mdash; Anystat 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
+
+  
+    <link rel="shortcut icon" href="_static/icon.png"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f115507d"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="数据建模模块" href="tutorial_modeling.html" />
+    <link rel="prev" title="数据预处理模块" href="tutorial_preprocessing.html" />
+ 
+<script src="_static/language_toggle.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_mac.html">通过脚本安装（Mac）</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial_startup.html"> 首次启动与 API 配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_loading.html"> 数据导入模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_preprocessing.html"> 数据预处理模块</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> 数据可视化模块</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">功能特点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">操作教程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">配色选择</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">可视化建议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">可视化执行</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">可视化结果</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_modeling.html"> 数据建模模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_report.html"> 报告生成模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">相关资源</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">数据可视化模块</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tutorial_visualization.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>数据可视化模块<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>数据可视化是数据分析的重要组成部分。Anystat 提供了丰富的数据可视化功能，帮助您直观地理解数据特征和关系。</p>
+<section id="id2">
+<h2>功能特点<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h3><span class="highlight-text">绘图配色调整</span></h3><ul class="simple">
+<li><p>系统预设九套精心设计的配色方案，用户可根据个人偏好选择适合的绘图配色，以提升可视化效果。</p></li>
+</ul>
+<h3><span class="highlight-text">可视化操作建议</span></h3><ul class="simple">
+<li><p>Visualization Agent 基于对数据含义与类型的理解，自动选择并生成适合的单变量与多变量可视化方案。</p></li>
+</ul>
+<h3><span class="highlight-text">代码执行可视化</span></h3><ul class="simple">
+<li><p>Visualization Agent 基于系统建议与用户需求，自动生成代码以灵活实现可视化展示，用户可在结果界面中下载相应的可视化图像。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>操作教程<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>配色选择<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>在配色选择模块中，选择您偏好的配色方案用于可视化展示。</p>
+<img alt="数据可视化-配色选择" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E9%85%8D%E8%89%B2%E9%80%89%E6%8B%A9.png" />
+</section>
+<section id="id5">
+<h3>可视化建议<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>通过与 Visualization Agent 交互，用户可获取可视化方案建议。建议生成后，系统将在对话栏下方显示 “生成可视化代码” 按钮，点击后即可生成可执行的 Python 可视化脚本。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>大模型生成的代码可能存在错误，运行过程中如发生异常，Visualization Agent 将自动分析并尝试修复。</p>
+</div>
+<img alt="数据可视化-可视化建议" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BB%BA%E8%AE%AE.png" />
+<img alt="代码生成" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90.png" />
+</section>
+<section id="id6">
+<h3>可视化执行<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>在可视化执行模块中，用户可对生成的代码进行编辑与执行。系统同时提供附加分析开关，支持用户根据需求灵活启用或关闭该功能。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>在当前版本中，启用附加分析后，Visualization Agent 将以串行方式依次分析可视化图表。当图表数量较多时，分析过程可能耗时较长。</p>
+</div>
+<img alt="数据可视化-可视化执行" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E6%89%A7%E8%A1%8C.png" />
+</section>
+<section id="id7">
+<h3>可视化结果<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>在可视化执行模块中点击“执行脚本”后，可在可视化结果模块查看生成的图像结果。对于多张图像，系统提供分页浏览功能，用户可通过翻页查看全部可视化输出（见红框）。</p>
+<img alt="数据可视化-可视化结果" src="_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%BB%93%E6%9E%9C.png" />
+<p>完成数据可视化后，您可以根据需求，选择后续操作。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="tutorial_preprocessing.html" class="btn btn-neutral float-left" title="数据预处理模块" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="tutorial_modeling.html" class="btn btn-neutral float-right" title="数据建模模块" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 © 2025 Anystat Team. All rights reserved。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

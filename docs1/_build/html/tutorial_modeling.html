@@ -1,0 +1,182 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数据建模模块 &mdash; Anystat 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
+
+  
+    <link rel="shortcut icon" href="_static/icon.png"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f115507d"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="报告生成模块" href="tutorial_report.html" />
+    <link rel="prev" title="数据可视化模块" href="tutorial_visualization.html" />
+ 
+<script src="_static/language_toggle.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_mac.html">通过脚本安装（Mac）</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial_startup.html"> 首次启动与 API 配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_loading.html"> 数据导入模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_preprocessing.html"> 数据预处理模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_visualization.html"> 数据可视化模块</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> 数据建模模块</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">功能特点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">操作教程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">快速建模</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">建模建议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">建模执行</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_report.html"> 报告生成模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">相关资源</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">数据建模模块</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tutorial_modeling.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>数据建模模块<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>数据建模是数据分析的核心环节。Anystat 提供了智能的数据建模功能，帮助您快速构建和评估机器学习模型。</p>
+<section id="id2">
+<h2>功能特点<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h3><span class="highlight-text">建模操作建议</span></h3><ul class="simple">
+<li><p>除用户指定的建模需求外，Modeling Agent 可结合建模目标与数据集特征，识别潜在任务并生成相应的模型推荐方案。</p></li>
+</ul>
+<h3><span class="highlight-text">代码执行建模</span></h3><ul class="simple">
+<li><p>Modeling Agent 可根据系统建议或用户需求，自动生成并执行建模代码，将结果转化为自然语言描述，并提供最优模型下载功能，方便用户复用模型。</p></li>
+</ul>
+<h3><span class="highlight-text">模型持续调优</span></h3><ul class="simple">
+<li><p>建模完成后，用户可再次点击“模型推荐”，Modeling Agent 将基于特征工程等多种方法对模型进行性能优化与持续调优，以提升整体建模效果。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>操作教程<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>快速建模<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>在快速建模模块中，用户可选择所需模型，并点击 “快速建模” 按钮，以快速生成相应的训练代码。
+生成的建模代码涵盖页面中提供的四种预设方案。</p>
+<img alt="建模分析-快速建模" src="_images/%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90-%E5%BF%AB%E9%80%9F%E5%BB%BA%E6%A8%A1.png" />
+</section>
+<section id="id5">
+<h3>建模建议<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>若希望由 Agent 推荐模型，用户可通过与 Modeling Agent 交互获取建模建议。
+当建议生成后，系统将在对话栏下方显示 “生成建模代码” 按钮，点击后即可生成可执行的 Python 建模脚本。</p>
+<img alt="建模分析-建模建议" src="_images/%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90-%E5%BB%BA%E6%A8%A1%E5%BB%BA%E8%AE%AE.png" />
+<img alt="代码生成" src="_images/%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90-%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90.png" />
+</section>
+<section id="id6">
+<h3>建模执行<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>在建模执行模块中，用户可对生成的代码进行编辑与执行。
+点击“执行脚本”后，Modeling Agent 将自动生成训练结果的自然语言描述，并提供下载系统生成的最佳模型的功能。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>运行过程中可能会多次报错，但 Anystat 助手会帮您修复 bug，无需人工检查。<strong>可以尝试多次向 LLM 请求代码生成以降低错误率。</strong></p>
+</div>
+<img alt="建模分析-建模执行" src="_images/%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90-%E5%BB%BA%E6%A8%A1%E6%89%A7%E8%A1%8C.png" />
+<img alt="建模分析-训练结果" src="_images/%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90-%E8%AE%AD%E7%BB%83%E7%BB%93%E6%9E%9C.png" />
+<p>完成数据建模后，您可以根据需求，选择后续操作。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="tutorial_visualization.html" class="btn btn-neutral float-left" title="数据可视化模块" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="tutorial_report.html" class="btn btn-neutral float-right" title="报告生成模块" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 © 2025 Anystat Team. All rights reserved。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

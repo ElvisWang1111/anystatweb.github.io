@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Startup and API Configuration &mdash; Anystat 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=bc65ff2a" />
+
+  
+    <link rel="shortcut icon" href="../_static/icon.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f115507d"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+ 
+<script src="../_static/language_toggle.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_mac.html">通过脚本安装（Mac）</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_startup.html"> 首次启动与 API 配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_loading.html"> 数据导入模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_preprocessing.html"> 数据预处理模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_visualization.html"> 数据可视化模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_modeling.html"> 数据建模模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_report.html"> 报告生成模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">相关资源</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">First Startup and API Configuration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/en/tutorial_startup.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="first-startup-and-api-configuration">
+<h1>First Startup and API Configuration<a class="headerlink" href="#first-startup-and-api-configuration" title="Link to this heading"></a></h1>
+<p>This document guides you through the initial setup process for Anystat, including API configuration and basic settings to ensure the software runs properly.</p>
+<section id="starting-anystat-for-the-first-time">
+<h2>Starting Anystat for the First Time<a class="headerlink" href="#starting-anystat-for-the-first-time" title="Link to this heading"></a></h2>
+<p>After installing Anystat, you can launch the software by:</p>
+<ul class="simple">
+<li><p>Double-clicking the Anystat desktop shortcut (Windows/Mac)</p></li>
+<li><p>Running <cite>anystat</cite> in Terminal or Command Prompt</p></li>
+<li><p>Launching from the Start menu (Windows) or Launchpad (Mac)</p></li>
+</ul>
+</section>
+<section id="initial-configuration-wizard">
+<h2>Initial Configuration Wizard<a class="headerlink" href="#initial-configuration-wizard" title="Link to this heading"></a></h2>
+<p>When you launch Anystat for the first time, you will be guided through an initial configuration wizard:</p>
+<ol class="arabic simple">
+<li><p><strong>Welcome Screen</strong>: Click &quot;Next&quot; to begin configuration</p></li>
+<li><p><strong>Language Selection</strong>: Choose your preferred interface language</p></li>
+<li><p><strong>API Configuration</strong>: This is a crucial step that enables Anystat's AI capabilities</p></li>
+</ol>
+</section>
+<section id="api-configuration">
+<h2>API Configuration<a class="headerlink" href="#api-configuration" title="Link to this heading"></a></h2>
+<p>Anystat requires API access to function properly. Here's how to configure it:</p>
+<img alt="API Configuration Interface" src="images/API_Configuration.png" />
+</section>
+<section id="step-1-select-api-provider">
+<h2>Step 1: Select API Provider<a class="headerlink" href="#step-1-select-api-provider" title="Link to this heading"></a></h2>
+<p>Choose from the available API providers:</p>
+<ul class="simple">
+<li><p>OpenAI API</p></li>
+<li><p>Anthropic API</p></li>
+<li><p>Other compatible APIs</p></li>
+</ul>
+</section>
+<section id="step-2-enter-api-key">
+<h2>Step 2: Enter API Key<a class="headerlink" href="#step-2-enter-api-key" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Obtain your API key from the selected provider:
+- For OpenAI: Visit <a class="reference external" href="https://platform.openai.com/api-keys">OpenAI API Keys</a>
+- For Anthropic: Visit <a class="reference external" href="https://console.anthropic.com/">Anthropic Console</a></p></li>
+<li><p>Copy the API key to your clipboard</p></li>
+<li><p>Paste the API key into the designated field in Anystat</p></li>
+</ol>
+</section>
+<section id="step-3-configure-model-settings">
+<h2>Step 3: Configure Model Settings<a class="headerlink" href="#step-3-configure-model-settings" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Model Selection</strong>: Choose the AI model you want to use (e.g., gpt-4, claude-3)</p></li>
+<li><p><strong>Temperature</strong>: Adjust the creativity level of AI responses (lower = more deterministic, higher = more creative)</p></li>
+<li><p><strong>Max Tokens</strong>: Set the maximum token limit for API responses</p></li>
+</ul>
+</section>
+<section id="step-4-test-api-connection">
+<h2>Step 4: Test API Connection<a class="headerlink" href="#step-4-test-api-connection" title="Link to this heading"></a></h2>
+<p>Click the &quot;Test Connection&quot; button to verify that your API configuration is working correctly. If the test is successful, you'll see a confirmation message.</p>
+</section>
+<section id="advanced-settings">
+<h2>Advanced Settings<a class="headerlink" href="#advanced-settings" title="Link to this heading"></a></h2>
+<p>Additional settings you can configure:</p>
+<ul class="simple">
+<li><p><strong>Proxy Settings</strong>: If you need to use a proxy server to access the API</p></li>
+<li><p><strong>Cache Settings</strong>: Configure how responses are cached</p></li>
+<li><p><strong>Logging Level</strong>: Set the level of detail for logs</p></li>
+</ul>
+</section>
+<section id="saving-configuration">
+<h2>Saving Configuration<a class="headerlink" href="#saving-configuration" title="Link to this heading"></a></h2>
+<p>After completing all settings, click &quot;Save&quot; to apply the configuration. Your API settings will be securely stored and used for all subsequent sessions.</p>
+</section>
+<section id="troubleshooting-api-issues">
+<h2>Troubleshooting API Issues<a class="headerlink" href="#troubleshooting-api-issues" title="Link to this heading"></a></h2>
+<p>If you encounter API connection problems:</p>
+<ol class="arabic simple">
+<li><p>Verify that your API key is entered correctly</p></li>
+<li><p>Ensure you have sufficient API credits/quota with your provider</p></li>
+<li><p>Check your internet connection and firewall settings</p></li>
+<li><p>If using a proxy, verify proxy settings are correct</p></li>
+<li><p>Refer to the error message for specific guidance</p></li>
+</ol>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
+<p>After successful configuration, you can start using Anystat by importing your data:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="tutorial_loading.html"><span class="doc">Data Import Module</span></a></p></li>
+<li><p><a class="reference internal" href="tutorial_preprocessing.html"><span class="doc">Data Preprocessing Module</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 © 2025 Anystat Team. All rights reserved。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

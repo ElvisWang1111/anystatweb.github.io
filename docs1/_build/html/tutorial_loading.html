@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数据导入模块 &mdash; Anystat 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=bc65ff2a" />
+
+  
+    <link rel="shortcut icon" href="_static/icon.png"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f115507d"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="数据预处理模块" href="tutorial_preprocessing.html" />
+    <link rel="prev" title="首次启动与 API 配置" href="tutorial_startup.html" />
+ 
+<script src="_static/language_toggle.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_mac.html">通过脚本安装（Mac）</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial_startup.html"> 首次启动与 API 配置</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> 数据导入模块</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">功能特点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">操作教程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">数据上传</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">数据类型概览</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">数据预览</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">数据建议</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_preprocessing.html"> 数据预处理模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_visualization.html"> 数据可视化模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_modeling.html"> 数据建模模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_report.html"> 报告生成模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">相关资源</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">数据导入模块</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tutorial_loading.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>数据导入模块<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>数据导入是使用 Anystat 进行数据分析的第一步。本章节将介绍如何将数据导入到 Anystat 中。</p>
+<section id="id2">
+<h2>功能特点<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h3><span class="highlight-text">表头表格合并</span></h3><ul class="simple">
+<li><p>在实际数据分析中，常见情况是表头文件 (<code class="docutils literal notranslate"><span class="pre">.name</span></code>) 与 数据文件 (<code class="docutils literal notranslate"><span class="pre">.data</span></code>) 分离存储。 Anystat 支持同时上传两类文件，自动提取表头，实现表头与数据表的自动合并。</p></li>
+</ul>
+<h3><span class="highlight-text">多文件上传</span></h3><ul class="simple">
+<li><p>Anystat 不仅支持多种数据存储格式，并且对于多文件分离存储情况，支持 <code class="docutils literal notranslate"><span class="pre">横向拼接</span></code> 与 <code class="docutils literal notranslate"><span class="pre">纵向拼接</span></code>，可在数据导入后选择拼接方式。</p></li>
+</ul>
+<h3><span class="highlight-text">列名含义解析</span></h3><ul class="simple">
+<li><p>在数据集中，列名通常以缩写形式出现。 Dataloading Agent 可自动识别并解析这些列名，帮助您快速了解其实际含义。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>操作教程<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>数据上传<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>Anystat 提供了两种数据上传方式：</p>
+<ol class="arabic simple">
+<li><p><strong>本地上传</strong>：点击上传按钮或直接拖动数据文件上传（适用于小于 200MB 的文件导入）</p></li>
+<li><p><strong>路径导入</strong>：输入具体的文件地址路径（适用于大文件导入）</p></li>
+</ol>
+<p>上传成功后，您将看到数据展示和数据建议模块。</p>
+<img alt="数据导入-数据上传" src="_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E4%B8%8A%E4%BC%A0.png" />
+</section>
+<section id="id5">
+<h3>数据类型概览<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>在数据展示模块，您可以查看数据类型概览：</p>
+<img alt="数据类型概览" src="_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A6%82%E8%A7%88.png" />
+</section>
+<section id="id6">
+<h3>数据预览<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>在数据预览界面中，您可以查看数据行并执行随机抽样操作。</p>
+<p>随机抽样结果仅用于辅助用户观察数据分布特征，不会保存或用于后续分析步骤。</p>
+<img alt="数据预览" src="_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA-%E6%95%B0%E6%8D%AE%E9%A2%84%E8%A7%88.png" />
+</section>
+<section id="id7">
+<h3>数据建议<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>在数据建议模块中，用户可通过点击按钮或自然语言交互的方式，自动生成数据集的整体描述及各列含义分析。</p>
+<img alt="数据导入-数据建议" src="_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%BB%BA%E8%AE%AE.png" />
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>每次分析耗时会随数据集规模的增大而相应增加。</p>
+</div>
+<p>完成数据导入后，您可以根据需求，选择后续操作。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="tutorial_startup.html" class="btn btn-neutral float-left" title="首次启动与 API 配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="tutorial_preprocessing.html" class="btn btn-neutral float-right" title="数据预处理模块" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 © 2025 Anystat Team. All rights reserved。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

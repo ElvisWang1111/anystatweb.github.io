@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Visualization Module &mdash; Anystat 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=bc65ff2a" />
+
+  
+    <link rel="shortcut icon" href="../_static/icon.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f115507d"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+ 
+<script src="../_static/language_toggle.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_mac.html">通过脚本安装（Mac）</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_startup.html"> 首次启动与 API 配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_loading.html"> 数据导入模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_preprocessing.html"> 数据预处理模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_visualization.html"> 数据可视化模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_modeling.html"> 数据建模模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_report.html"> 报告生成模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">相关资源</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Visualization Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/en/tutorial_visualization.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-visualization-module">
+<h1>Data Visualization Module<a class="headerlink" href="#data-visualization-module" title="Link to this heading"></a></h1>
+<p>The Data Visualization Module in Anystat provides powerful tools to create meaningful visualizations from your data. This document covers the various visualization features available.</p>
+<section id="accessing-the-data-visualization-module">
+<h2>Accessing the Data Visualization Module<a class="headerlink" href="#accessing-the-data-visualization-module" title="Link to this heading"></a></h2>
+<p>To access the Data Visualization Module:</p>
+<ol class="arabic simple">
+<li><p>Launch Anystat</p></li>
+<li><p>Import and preprocess your data</p></li>
+<li><p>From the main dashboard, click on &quot;Data Visualization&quot; in the left navigation menu</p></li>
+</ol>
+</section>
+<section id="visualization-recommendations">
+<h2>Visualization Recommendations<a class="headerlink" href="#visualization-recommendations" title="Link to this heading"></a></h2>
+<p>Anystat provides intelligent visualization recommendations based on your dataset:</p>
+<img alt="Visualization Recommendations" src="../_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BB%BA%E8%AE%AE.png" />
+<ul class="simple">
+<li><p>Recommended chart types based on data characteristics</p></li>
+<li><p>Suggested variables for x and y axes</p></li>
+<li><p>Color scheme recommendations</p></li>
+<li><p>Layout suggestions</p></li>
+</ul>
+</section>
+<section id="manual-visualization-creation">
+<h2>Manual Visualization Creation<a class="headerlink" href="#manual-visualization-creation" title="Link to this heading"></a></h2>
+<p>You can manually create various types of visualizations:</p>
+<img alt="Visualization Execution" src="../_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E6%89%A7%E8%A1%8C.png" />
+<ol class="arabic simple">
+<li><p><strong>Select Chart Type</strong>:
+- Bar charts
+- Line charts
+- Scatter plots
+- Histograms
+- Box plots
+- Pie charts
+- Heatmaps
+- 3D visualizations
+- And more...</p></li>
+<li><p><strong>Configure Chart Settings</strong>:
+- Select data columns
+- Set titles and labels
+- Configure axes
+- Set legends
+- Adjust plot size</p></li>
+</ol>
+</section>
+<section id="color-selection">
+<h2>Color Selection<a class="headerlink" href="#color-selection" title="Link to this heading"></a></h2>
+<p>Customize the color scheme of your visualizations:</p>
+<img alt="Color Selection" src="../_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E9%85%8D%E8%89%B2%E9%80%89%E6%8B%A9.png" />
+<ul class="simple">
+<li><p>Use predefined color palettes</p></li>
+<li><p>Create custom color schemes</p></li>
+<li><p>Set color by categorical variables</p></li>
+<li><p>Adjust transparency and brightness</p></li>
+</ul>
+</section>
+<section id="visualization-results">
+<h2>Visualization Results<a class="headerlink" href="#visualization-results" title="Link to this heading"></a></h2>
+<p>View and interact with your visualization results:</p>
+<img alt="Visualization Results" src="../_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%BB%93%E6%9E%9C.png" />
+<ul class="simple">
+<li><p>Interactive charts (zoom, pan, hover)</p></li>
+<li><p>Multiple views of the same data</p></li>
+<li><p>Comparison tools</p></li>
+<li><p>Statistical annotations</p></li>
+</ul>
+</section>
+<section id="code-generation">
+<h2>Code Generation<a class="headerlink" href="#code-generation" title="Link to this heading"></a></h2>
+<p>Anystat automatically generates Python code for the visualizations you create:</p>
+<img alt="Code Generation" src="../_images/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96-%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90.png" />
+<ul class="simple">
+<li><p>View the generated code</p></li>
+<li><p>Copy the code for your own use</p></li>
+<li><p>Modify the code directly if needed</p></li>
+<li><p>Save the code for future reference</p></li>
+</ul>
+</section>
+<section id="exporting-visualizations">
+<h2>Exporting Visualizations<a class="headerlink" href="#exporting-visualizations" title="Link to this heading"></a></h2>
+<p>You can export your visualizations in various formats:</p>
+<ul class="simple">
+<li><p>PNG, JPG, SVG (for images)</p></li>
+<li><p>PDF (for high-quality prints)</p></li>
+<li><p>HTML (for interactive web visualizations)</p></li>
+<li><p>CSV/JSON (for data used in visualizations)</p></li>
+</ul>
+</section>
+<section id="batch-visualization">
+<h2>Batch Visualization<a class="headerlink" href="#batch-visualization" title="Link to this heading"></a></h2>
+<p>Create multiple visualizations at once:</p>
+<ol class="arabic simple">
+<li><p>Select multiple chart types</p></li>
+<li><p>Configure settings for all visualizations</p></li>
+<li><p>Generate them simultaneously</p></li>
+<li><p>Compare side by side</p></li>
+</ol>
+</section>
+<section id="dashboard-creation">
+<h2>Dashboard Creation<a class="headerlink" href="#dashboard-creation" title="Link to this heading"></a></h2>
+<p>Create custom dashboards with multiple visualizations:</p>
+<ul class="simple">
+<li><p>Arrange visualizations in a grid layout</p></li>
+<li><p>Link related visualizations</p></li>
+<li><p>Create interactive filters</p></li>
+<li><p>Save and share dashboards</p></li>
+</ul>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
+<p>Common visualization issues and solutions:</p>
+<ol class="arabic simple">
+<li><p><strong>Memory Errors</strong>: For large datasets, consider downsampling</p></li>
+<li><p><strong>Rendering Issues</strong>: Check browser compatibility</p></li>
+<li><p><strong>Data Issues</strong>: Ensure data is properly preprocessed</p></li>
+<li><p><strong>Performance</strong>: Optimize by reducing points or complexity</p></li>
+</ol>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
+<p>After creating visualizations, you can proceed with modeling or report generation:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="tutorial_modeling.html"><span class="doc">Data Modeling Module</span></a></p></li>
+<li><p><a class="reference internal" href="tutorial_report.html"><span class="doc">Report Generation Module</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 © 2025 Anystat Team. All rights reserved。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<script src="{{ pathto('_static/language_toggle.js', 1) }}"></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+{{ super() }}
+{% endblock %}
