@@ -12,7 +12,7 @@
 我们使用 UC Irvine 中的数据集 “ `Wine <https://archive.ics.uci.edu/dataset/109/wine>`_ ”（包含 178 条数据，去除 Index 文件）作为测试数据集。  
 各部分耗时情况如下（单位：秒）：
 
-.. list-table:: 小规模数据（<1000 条）
+.. list-table::
    :header-rows: 1
    :widths: 18 20 20
    :align: center
@@ -43,7 +43,7 @@
 我们使用 UC Irvine 中的数据集 “ `Seoul Bike Sharing Demand <https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand>`_ ”（包含 8760 条数据）作为测试数据集。  
 各部分耗时情况如下（单位：秒）：
 
-.. list-table:: 中等规模数据（1000–10000 条）
+.. list-table::
    :header-rows: 1
    :widths: 18 20 20
    :align: center
@@ -74,7 +74,7 @@
 我们使用 UC Irvine 中的数据集 “ `Steel Industry Energy Consumption <https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption>`_ ”（包含 35040 条数据）作为测试数据集。  
 各部分耗时情况如下（单位：秒）：
 
-.. list-table:: 大规模数据（>10000 条）
+.. list-table::
    :header-rows: 1
    :widths: 18 20 20
    :align: center
