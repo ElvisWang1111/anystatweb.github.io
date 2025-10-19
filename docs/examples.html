@@ -97,7 +97,8 @@
              
   <section id="id1">
 <h1>使用示例<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<p>本章节提供了不同规模数据量的使用示例，帮助您了解 Anystat 在处理不同大小数据集时的性能表现。 <strong>注意，所有耗时测试均在自动模式下进行。</strong></p>
+<p>本章节提供了不同规模数据量的使用示例，帮助您了解 Anystat 在处理不同大小数据集时的性能表现。
+<strong>注意，所有耗时测试均在自动模式下进行。</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>我们对每个实验进行了 5 次独立重复测试，并以 “均值 ± 标准差” 的形式报告耗时结果。测试结果不包括数据上传与解析为 DataFrame 的时间。需要注意，由于大模型生成内容存在一定的不确定性，且不同模型间性能差异较大，实际运行中的耗时可能会出现一定波动。</p>
@@ -117,7 +118,7 @@
 <section id="id3">
 <h2>中等规模数据量示例（1000 条–10000 条）<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>我们使用 UC Irvine 中的数据集 “ <a class="reference external" href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand">Seoul Bike Sharing Demand</a> ”（包含 8760 条数据）作为测试数据集。
-各部分耗时情况如下：</p>
+各部分耗时情况如下（单位：秒）：</p>
 <p>环节          ChatGPT-4o 耗时    Deepseek 耗时
 ============  =================  ================
 数据导入        6.79±0.79           16.93±0.46
@@ -129,7 +130,7 @@
 <section id="id4">
 <h2>大规模数据量示例（&gt;10000 条）<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>我们使用 UC Irvine 中的数据集 “ <a class="reference external" href="https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption">Steel Industry Energy Consumption</a> ”（包含 35040 条数据）作为测试数据集。
-各部分耗时情况如下：</p>
+各部分耗时情况如下（单位：秒）：</p>
 <p>环节          ChatGPT-4o 耗时    Deepseek 耗时
 ============  =================  ================
 数据导入        6.33±0.63           18.03±0.48
