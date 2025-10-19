@@ -97,42 +97,29 @@
              
   <section id="id1">
 <h1>使用示例<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<p>本章节提供了不同规模数据量的使用示例，帮助您了解 Anystat 在处理不同大小数据集时的性能表现。</p>
+<p>本章节提供了不同规模数据量的使用示例，帮助您了解 Anystat 在处理不同大小数据集时的性能表现。 <strong>注意，所有耗时测试均在自动模式下进行。</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>耗时情况以 “均值±标准差” 的形式给出，不计数据上传解析为 dataframe 的时间。由于大模型返回内容的不稳定性及不同模型间的差别，实际操作中耗时可能会有较大差异。</p>
+</div>
 <section id="id2">
 <h2>小规模数据量示例（&lt;1000 条）<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>我们使用 Kaggle 经典数据集 “Titanic dataset”（train.csv 中 891 条数据）作为测试数据集。
-各部分耗时情况如下：</p>
-<ul class="simple">
-<li><p>数据预处理：约 3 min</p></li>
-<li><p>数据可视化：约 6 min</p></li>
-<li><p>数据建模：约 10 min</p></li>
-<li><p>报告生成：约 8 min</p></li>
-</ul>
+<p>我们使用 UC Irvine 中的数据集 “ <a class="reference external" href="https://archive.ics.uci.edu/dataset/109/wine">Wine</a> ”（包含 178 条数据，去除 Index 文件）作为测试数据集。
+各部分耗时情况如下（单位：秒）：</p>
 </section>
 <section id="id3">
 <h2>中等规模数据量示例（1000 条–10000 条）<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p>我们使用 Kaggle 经典数据集 “House Prices: Advanced Regression Techniques”（train.csv 中 1460 条数据）作为测试数据集。
+<p>我们使用 UC Irvine 中的数据集 “ <a class="reference external" href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand">Seoul Bike Sharing Demand</a> ”（包含 8760 条数据）作为测试数据集。
 各部分耗时情况如下：</p>
-<ul class="simple">
-<li><p>数据预处理：约 5 min</p></li>
-<li><p>数据可视化：约 8 min</p></li>
-<li><p>数据建模：约 13 min</p></li>
-<li><p>报告生成：约 10 min</p></li>
-</ul>
 </section>
 <section id="id4">
 <h2>大规模数据量示例（&gt;10000 条）<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<p>我们使用 Kaggle 经典数据集 “共享单车需求数据集（Bike Sharing Dataset）”（包含 10886 条记录）作为测试数据集。
+<p>我们使用 UC Irvine 中的数据集 “ <a class="reference external" href="https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption">Steel Industry Energy Consumption</a> ”（包含 35040 条数据）作为测试数据集。
 各部分耗时情况如下：</p>
-<ul class="simple">
-<li><p>数据预处理：约 7 min</p></li>
-<li><p>数据可视化：约 12 min</p></li>
-<li><p>数据建模：约 15 min</p></li>
-<li><p>报告生成：约 14 min</p></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>实际耗时可能因硬件配置、网络状况和具体操作而有所不同。</p>
+<p>实际耗时可能因硬件配置、网络状况和具体操作而有所不同。由于大模型返回结果不稳定，如果在自动模式下出现预处理、可视化及建模环节 debug 次数过多的情况，请
+清空数据并重新开始流程；如为手动操作，请切换至其他环节并再切回对应出错环节重试。</p>
 </div>
 </section>
 </section>
