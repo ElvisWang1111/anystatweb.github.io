@@ -45,7 +45,15 @@ document.addEventListener('DOMContentLoaded', function() {
       // 创建语言切换按钮
       const langButton = document.createElement('button');
       langButton.id = 'lang-toggle';
-      langButton.textContent = '中/EN';
+      
+      // 根据当前页面语言设置按钮文本
+      const currentPath = window.location.pathname;
+      if (currentPath.includes('/en/')) {
+        langButton.textContent = 'EN/中';
+      } else {
+        langButton.textContent = '中/EN';
+      }
+      
       langButton.style.backgroundColor = '#2980B9';
       langButton.style.color = 'white';
       langButton.style.border = 'none';

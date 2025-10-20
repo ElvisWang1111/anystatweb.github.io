@@ -47,7 +47,7 @@ extensions = [
 language = 'zh_CN'
 
 # Add any paths that contain locale files here, relative to this directory.
-locale_dirs = ['locale/']
+locale_dirs = ['locale/', 'en/locale/']
 
 # If true, Sphinx will generate message catalogs from source files
 gettext_compile = True
