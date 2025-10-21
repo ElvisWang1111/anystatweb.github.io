@@ -1,33 +1,75 @@
 // 语言切换功能
 document.addEventListener('DOMContentLoaded', function() {
-  // 定义语言切换函数
-  window.toggleLanguage = function() {
-    // 获取当前路径
+  // 获取当前语言
+  function getCurrentLanguage() {
     const currentPath = window.location.pathname;
-    let newPath;
+    return currentPath.includes('/en/') ? 'en' : 'zh';
+  }
+  
+  // 构建目标语言路径
+  function buildTargetPath(targetLang) {
+    const currentPath = window.location.pathname;
+    const currentLang = getCurrentLanguage();
     
-    // 简单地根据当前路径判断语言并切换
-    if (currentPath.includes('/en/')) {
-      // 当前是英文，切换到中文
-      newPath = currentPath.replace('/en/', '/');
-      localStorage.setItem('preferred_language', 'zh');
-    } else {
-      // 当前是中文，切换到英文
-      // 找到最后一个'/'的位置，在其前插入'en/'
-      const lastSlashIndex = currentPath.lastIndexOf('/');
-      if (lastSlashIndex > 0) {
-        newPath = currentPath.slice(0, lastSlashIndex) + '/en' + currentPath.slice(lastSlashIndex);
-      } else {
-        // 处理根路径情况
-        newPath = '/en' + currentPath;
-      }
-      localStorage.setItem('preferred_language', 'en');
+    // 如果已经是目标语言，返回当前路径
+    if (currentLang === targetLang) {
+      return currentPath;
     }
     
-    console.log('切换路径: ' + currentPath + ' -> ' + newPath);
+    // 处理从英文切换到中文
+    if (currentLang === 'en' && targetLang === 'zh') {
+      // 移除路径中的 /en/
+      return currentPath.replace('/en/', '/');
+    }
+    
+    // 处理从中文切换到英文
+    if (currentLang === 'zh' && targetLang === 'en') {
+      // 处理根路径
+      if (currentPath === '/' || currentPath.endsWith('/index.html')) {
+        return '/en/';
+      }
+      
+      // 解析当前路径
+      const pathParts = currentPath.split('/');
+      
+      // 移除空字符串部分
+      const cleanParts = pathParts.filter(part => part !== '');
+      
+      // 在路径开头添加 /en/
+      return '/en/' + cleanParts.join('/');
+    }
+    
+    return currentPath;
+  }
+  
+  // 定义语言切换函数
+  window.toggleLanguage = function() {
+    const currentLang = getCurrentLanguage();
+    const targetLang = currentLang === 'en' ? 'zh' : 'en';
+    const newPath = buildTargetPath(targetLang);
+    
+    // 保存用户语言偏好
+    localStorage.setItem('preferred_language', targetLang);
+    
+    console.log('切换语言: ' + currentLang + ' -> ' + targetLang);
+    console.log('切换路径: ' + window.location.pathname + ' -> ' + newPath);
+    
     // 重定向到新路径
     window.location.href = newPath;
   };
+  
+  // 检查并应用用户语言偏好
+  function applyLanguagePreference() {
+    const preferredLang = localStorage.getItem('preferred_language');
+    if (!preferredLang) return;
+    
+    const currentLang = getCurrentLanguage();
+    if (currentLang !== preferredLang) {
+      const targetPath = buildTargetPath(preferredLang);
+      console.log('应用语言偏好: ' + currentLang + ' -> ' + preferredLang);
+      window.location.replace(targetPath);
+    }
+  }
   
   // 添加语言切换按钮到面包屑导航区域
   function addLanguageToggle() {
@@ -47,12 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
       langButton.id = 'lang-toggle';
       
       // 根据当前页面语言设置按钮文本
-      const currentPath = window.location.pathname;
-      if (currentPath.includes('/en/')) {
-        langButton.textContent = 'EN/中';
-      } else {
-        langButton.textContent = '中/EN';
-      }
+      const currentLang = getCurrentLanguage();
+      langButton.textContent = currentLang === 'en' ? 'EN/中' : '中/EN';
       
       langButton.style.backgroundColor = '#2980B9';
       langButton.style.color = 'white';
@@ -82,6 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
       breadcrumbsAside.appendChild(container);
     }
   }
+  
+  // 页面加载时应用语言偏好
+  applyLanguagePreference();
   
   // 尝试多次添加按钮，以防页面加载延迟
   addLanguageToggle();
