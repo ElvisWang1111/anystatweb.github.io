@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Import Module &mdash; Anystat 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=bc65ff2a" />
+
+  
+    <link rel="shortcut icon" href="../_static/icon.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f115507d"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+ 
+<script src="../_static/language_toggle.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_mac.html">通过脚本安装（Mac）</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_startup.html"> 首次启动与 API 配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_loading.html"> 数据导入模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_preprocessing.html"> 数据预处理模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_visualization.html"> 数据可视化模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_modeling.html"> 数据建模模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_report.html"> 报告生成模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">相关资源</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Import Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/en/tutorial_loading.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-import-module">
+<h1>Data Import Module<a class="headerlink" href="#data-import-module" title="Link to this heading"></a></h1>
+<p>The Data Import Module in Anystat allows you to easily upload and manage your data files. This document covers the various data import methods and features available.</p>
+<section id="accessing-the-data-import-module">
+<h2>Accessing the Data Import Module<a class="headerlink" href="#accessing-the-data-import-module" title="Link to this heading"></a></h2>
+<p>To access the Data Import Module:</p>
+<ol class="arabic simple">
+<li><p>Launch Anystat</p></li>
+<li><p>From the main dashboard, click on “Data Import” in the left navigation menu</p></li>
+</ol>
+</section>
+<section id="supported-data-formats">
+<h2>Supported Data Formats<a class="headerlink" href="#supported-data-formats" title="Link to this heading"></a></h2>
+<p>Anystat supports importing data from the following formats:</p>
+<ul class="simple">
+<li><p>CSV (Comma-Separated Values)</p></li>
+<li><p>Excel (XLSX, XLS)</p></li>
+<li><p>JSON (JavaScript Object Notation)</p></li>
+<li><p>Parquet</p></li>
+<li><p>SQL databases (via connection)</p></li>
+<li><p>Plain text files</p></li>
+</ul>
+</section>
+<section id="importing-data">
+<h2>Importing Data<a class="headerlink" href="#importing-data" title="Link to this heading"></a></h2>
+</section>
+<section id="method-1-upload-file">
+<h2>Method 1: Upload File<a class="headerlink" href="#method-1-upload-file" title="Link to this heading"></a></h2>
+<img alt="Data Upload Interface" src="../_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E4%B8%8A%E4%BC%A0.png" />
+<ol class="arabic simple">
+<li><p>Click the “Upload File” button</p></li>
+<li><p>Select one or more files from your computer</p></li>
+<li><p>Click “Open” to start the upload process</p></li>
+<li><p>Wait for the file to be processed</p></li>
+</ol>
+</section>
+<section id="method-2-drag-and-drop">
+<h2>Method 2: Drag and Drop<a class="headerlink" href="#method-2-drag-and-drop" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Simply drag your data files from your file explorer</p></li>
+<li><p>Drop them into the designated area in Anystat</p></li>
+<li><p>The files will be automatically uploaded and processed</p></li>
+</ol>
+</section>
+<section id="method-3-database-connection">
+<h2>Method 3: Database Connection<a class="headerlink" href="#method-3-database-connection" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Click the “Connect Database” button</p></li>
+<li><p>Select the database type (MySQL, PostgreSQL, SQLite, etc.)</p></li>
+<li><p>Enter the connection details:
+- Host address
+- Port number
+- Username and password
+- Database name</p></li>
+<li><p>Click “Test Connection” to verify</p></li>
+<li><p>Once connected, select the tables you want to import</p></li>
+</ol>
+</section>
+<section id="data-preview">
+<h2>Data Preview<a class="headerlink" href="#data-preview" title="Link to this heading"></a></h2>
+<p>After importing, you can preview your data:</p>
+<img alt="Data Preview Interface" src="../_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA-%E6%95%B0%E6%8D%AE%E9%A2%84%E8%A7%88.png" />
+<ul class="simple">
+<li><p><strong>View Data</strong>: See the first few rows of your dataset</p></li>
+<li><p><strong>Adjust Column Width</strong>: Resize columns as needed</p></li>
+<li><p><strong>Sort Data</strong>: Click on column headers to sort</p></li>
+</ul>
+</section>
+<section id="data-type-overview">
+<h2>Data Type Overview<a class="headerlink" href="#data-type-overview" title="Link to this heading"></a></h2>
+<p>Anystat automatically detects and categorizes data types:</p>
+<img alt="Data Type Overview" src="../_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A6%82%E8%A7%88.png" />
+<ul class="simple">
+<li><p><strong>Numerical</strong>: Integers, floats, etc.</p></li>
+<li><p><strong>Categorical</strong>: Text categories, enums</p></li>
+<li><p><strong>Date/Time</strong>: Timestamps, dates</p></li>
+<li><p><strong>Text</strong>: Long text fields</p></li>
+<li><p><strong>Boolean</strong>: True/false values</p></li>
+</ul>
+<p>You can manually adjust these types if needed.</p>
+</section>
+<section id="data-import-recommendations">
+<h2>Data Import Recommendations<a class="headerlink" href="#data-import-recommendations" title="Link to this heading"></a></h2>
+<p>Anystat provides intelligent recommendations based on your dataset:</p>
+<img alt="Data Import Recommendations" src="../_images/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%BB%BA%E8%AE%AE.png" />
+<ul class="simple">
+<li><p>Potential data quality issues</p></li>
+<li><p>Suggested preprocessing steps</p></li>
+<li><p>Analysis possibilities</p></li>
+<li><p>Recommended visualization types</p></li>
+</ul>
+</section>
+<section id="managing-imported-data">
+<h2>Managing Imported Data<a class="headerlink" href="#managing-imported-data" title="Link to this heading"></a></h2>
+<p>After importing, you can:</p>
+<ul class="simple">
+<li><p><strong>Rename Dataset</strong>: Give your dataset a meaningful name</p></li>
+<li><p><strong>Save Dataset</strong>: Save for future sessions</p></li>
+<li><p><strong>Export Dataset</strong>: Export to various formats</p></li>
+<li><p><strong>Delete Dataset</strong>: Remove unwanted datasets</p></li>
+</ul>
+</section>
+<section id="batch-processing">
+<h2>Batch Processing<a class="headerlink" href="#batch-processing" title="Link to this heading"></a></h2>
+<p>For multiple files, you can use batch processing:</p>
+<ol class="arabic simple">
+<li><p>Select multiple files during upload</p></li>
+<li><p>Apply consistent settings across all files</p></li>
+<li><p>Process them simultaneously</p></li>
+</ol>
+</section>
+<section id="troubleshooting-import-issues">
+<h2>Troubleshooting Import Issues<a class="headerlink" href="#troubleshooting-import-issues" title="Link to this heading"></a></h2>
+<p>Common issues and solutions:</p>
+<ol class="arabic simple">
+<li><p><strong>File Size Limitations</strong>: If your file is too large, consider splitting it</p></li>
+<li><p><strong>Encoding Problems</strong>: Ensure your file uses UTF-8 encoding</p></li>
+<li><p><strong>Format Errors</strong>: Verify your file follows the correct format specifications</p></li>
+<li><p><strong>Memory Issues</strong>: For very large datasets, consider increasing system memory or using database connections</p></li>
+</ol>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
+<p>After importing your data, you can proceed with preprocessing:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="tutorial_preprocessing.html"><span class="doc">Data Preprocessing Module</span></a></p></li>
+<li><p><a class="reference internal" href="tutorial_visualization.html"><span class="doc">Data Visualization Module</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 © 2025 Anystat Team. All rights reserved。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

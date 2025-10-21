@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage Examples &mdash; Anystat 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=bc65ff2a" />
+
+  
+    <link rel="shortcut icon" href="../_static/icon.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f115507d"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+ 
+<script src="../_static/language_toggle.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">安装部署</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">通过源码安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_win.html">通过发行包安装（Win）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_mac.html">通过脚本安装（Mac）</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_startup.html"> 首次启动与 API 配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_loading.html"> 数据导入模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_preprocessing.html"> 数据预处理模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_visualization.html"> 数据可视化模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_modeling.html"> 数据建模模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_report.html"> 报告生成模块</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">扩展资源</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">相关资源</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Anystat</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Usage Examples</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/en/examples.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage-examples">
+<h1>Usage Examples<a class="headerlink" href="#usage-examples" title="Link to this heading"></a></h1>
+<p>This document provides various usage examples of Anystat to help you get started with different types of data analysis tasks.</p>
+<section id="basic-data-analysis-workflow">
+<h2>Basic Data Analysis Workflow<a class="headerlink" href="#basic-data-analysis-workflow" title="Link to this heading"></a></h2>
+<p><strong>Scenario</strong>: Analyzing sales data to identify trends and patterns.</p>
+<p><strong>Step-by-Step Process</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Data Import</strong>:
+- Upload a CSV file containing sales data
+- Preview the data to ensure proper import
+- Verify data types are correctly identified</p></li>
+<li><p><strong>Data Preprocessing</strong>:
+- Handle missing values in the dataset
+- Remove outliers using the IQR method
+- Normalize numerical features
+- Encode categorical variables</p></li>
+<li><p><strong>Data Visualization</strong>:
+- Create time series plots to show sales trends
+- Generate bar charts comparing product categories
+- Create heatmaps to identify correlations
+- Build scatter plots to explore relationships between variables</p></li>
+<li><p><strong>Data Modeling</strong>:
+- Train a regression model to predict future sales
+- Evaluate model performance using metrics
+- Generate feature importance analysis</p></li>
+<li><p><strong>Report Generation</strong>:
+- Create a comprehensive report with all findings
+- Include interactive visualizations
+- Add recommendations based on the analysis</p></li>
+</ol>
+</section>
+<section id="advanced-feature-engineering">
+<h2>Advanced Feature Engineering<a class="headerlink" href="#advanced-feature-engineering" title="Link to this heading"></a></h2>
+<p><strong>Scenario</strong>: Predicting customer churn using advanced feature engineering.</p>
+<p><strong>Key Steps</strong>:</p>
+<ol class="arabic">
+<li><p><strong>Data Import and Exploration</strong>:
+- Import customer data from multiple sources
+- Merge datasets based on customer IDs
+- Explore data distributions</p></li>
+<li><p><strong>Feature Engineering</strong>:
+- Create derived features:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Customer tenure</p></li>
+<li><p>Average purchase amount</p></li>
+<li><p>Frequency of interactions</p></li>
+<li><p>Recency of last purchase</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Build interaction features</p></li>
+<li><p>Create time-based aggregations</p></li>
+</ul>
+</li>
+<li><p><strong>Model Building</strong>:
+- Try multiple classification algorithms
+- Perform hyperparameter optimization
+- Use cross-validation to ensure robustness</p></li>
+<li><p><strong>Model Interpretation</strong>:
+- Generate SHAP values to explain predictions
+- Create partial dependence plots
+- Identify key drivers of churn</p></li>
+</ol>
+</section>
+<section id="time-series-analysis">
+<h2>Time Series Analysis<a class="headerlink" href="#time-series-analysis" title="Link to this heading"></a></h2>
+<p><strong>Scenario</strong>: Forecasting stock prices using time series analysis.</p>
+<p><strong>Implementation Steps</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Data Preparation</strong>:
+- Import historical stock price data
+- Clean and preprocess the time series
+- Create time-based features</p></li>
+<li><p><strong>Exploratory Analysis</strong>:
+- Visualize price trends
+- Analyze seasonality and patterns
+- Check for stationarity</p></li>
+<li><p><strong>Modeling</strong>:
+- Train ARIMA, Prophet, or LSTM models
+- Compare forecast accuracy
+- Generate confidence intervals</p></li>
+<li><p><strong>Evaluation</strong>:
+- Use metrics like MAE, RMSE, MAPE
+- Backtest models on historical data
+- Iterate and improve model performance</p></li>
+</ol>
+</section>
+<section id="natural-language-processing">
+<h2>Natural Language Processing<a class="headerlink" href="#natural-language-processing" title="Link to this heading"></a></h2>
+<p><strong>Scenario</strong>: Analyzing customer reviews to extract sentiment and key topics.</p>
+<p><strong>Workflow</strong>:</p>
+<ol class="arabic">
+<li><p><strong>Text Data Processing</strong>:
+- Import text data from CSV or database
+- Clean and preprocess text:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Remove stopwords</p></li>
+<li><p>Lowercase conversion</p></li>
+<li><p>Stemming/lemmatization</p></li>
+<li><p>Remove special characters</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Text Analysis</strong>:
+- Perform sentiment analysis
+- Extract key phrases and entities
+- Topic modeling using LDA or NMF</p></li>
+<li><p><strong>Visualization</strong>:
+- Create word clouds
+- Generate sentiment distribution charts
+- Visualize topic clusters</p></li>
+<li><p><strong>Insights</strong>:
+- Identify common pain points
+- Discover positive features
+- Track sentiment over time</p></li>
+</ol>
+</section>
+<section id="batch-processing-automation">
+<h2>Batch Processing Automation<a class="headerlink" href="#batch-processing-automation" title="Link to this heading"></a></h2>
+<p><strong>Scenario</strong>: Automating monthly data processing and reporting.</p>
+<p><strong>Setup Process</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Pipeline Creation</strong>:
+- Define the complete processing workflow
+- Set up preprocessing steps
+- Configure visualization templates
+- Prepare report layouts</p></li>
+<li><p><strong>Automation</strong>:
+- Schedule regular execution
+- Set up data refresh mechanisms
+- Configure email delivery of reports</p></li>
+<li><p><strong>Monitoring</strong>:
+- Track pipeline performance
+- Set up alerts for failures
+- Log processing details</p></li>
+</ol>
+</section>
+<section id="custom-plugin-development">
+<h2>Custom Plugin Development<a class="headerlink" href="#custom-plugin-development" title="Link to this heading"></a></h2>
+<p><strong>Scenario</strong>: Creating a custom plugin for specialized data analysis.</p>
+<p><strong>Development Steps</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Plugin Structure</strong>:
+- Follow the Anystat plugin API
+- Implement required interfaces
+- Set up configuration options</p></li>
+<li><p><strong>Functionality Implementation</strong>:
+- Add custom processing logic
+- Implement visualization components
+- Create user interface elements</p></li>
+<li><p><strong>Testing and Integration</strong>:
+- Test with sample data
+- Integrate with Anystat
+- Document usage and parameters</p></li>
+</ol>
+</section>
+<section id="getting-help">
+<h2>Getting Help<a class="headerlink" href="#getting-help" title="Link to this heading"></a></h2>
+<p>If you need assistance with any of these examples or have questions about implementing specific analyses, please refer to the following resources:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="resources.html"><span class="doc">Related Resources</span></a></p></li>
+<li><p>Anystat community forums</p></li>
+<li><p>GitHub issues page</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 © 2025 Anystat Team. All rights reserved。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
