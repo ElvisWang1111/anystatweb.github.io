@@ -1,7 +1,7 @@
 # Anystat 文档网站
 
-[![简体中文-Click to view](https://img.shields.io/badge/简体中文-Click_to_view-red.svg)](https://anystatweb.github.io/README.md)
-[![English-Click to view](https://img.shields.io/badge/English-Click_to_view-blue.svg)](https://anystatweb.github.io/README_EN.md)
+[![简体中文-Click to view](https://img.shields.io/badge/简体中文-Click_to_view-red.svg)](https://anystatweb.github.io/blob/main/README.md)
+[![English-Click to view](https://img.shields.io/badge/English-Click_to_view-blue.svg)](https://anystatweb.github.io/blob/main/README_EN.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 这是Anystat数据分析助手的官方文档网站，使用VitePress + GitHub Pages构建。
