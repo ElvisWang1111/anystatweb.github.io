@@ -1,7 +1,8 @@
 # Anystat Documentation
 
-[![简体中文-Click to view](https://img.shields.io/badge/简体中文-Click_to_view-red.svg)](https://anystatweb.github.io/docs/)
-[![English-Click to view](https://img.shields.io/badge/English-Click_to_view-blue.svg)](https://anystatweb.github.io/docs/en/)
+[![简体中文-Click to view](https://img.shields.io/badge/简体中文-Click_to_view-red.svg)](https://anystatweb.github.io/Anystat_doc_web.github.io/docs/)
+[![English-Click to view](https://img.shields.io/badge/English-Click_to_view-blue.svg)](https://anystatweb.github.io/Anystat_doc_web.github.io/docs/en/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is the official documentation website for Anystat Data Analysis Assistant, built with VitePress + GitHub Pages.
 
